@@ -17,7 +17,8 @@ blockquote {
 
 .btn-lg {
     border-radius: 2px;
-    background-color: #049EC4;
+    /*background-color: #049EC4;*/
+    background: #2d3033;
     color: #FFFFFF !important;
     border-color: #FFFFFF;
 }
@@ -26,7 +27,8 @@ blockquote {
     margin-top: -20px;
     padding-bottom: 30px;
     padding-top: 30px;
-    background-color: #049EC4;
+    /*background-color: #049EC4;*/
+    background: #2d3033;
     color: #FFFFFF
 }
 
