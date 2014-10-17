@@ -7,8 +7,8 @@ img {
     position: relative;
     display: inline-block;
     background: url(../images/sprite.png?v=1.0.3) -350px -880px no-repeat;
-    width: 355px;
-    height: 355px;
+    width: 444px;
+
 }
 h1 {
     font-size: 32px;
