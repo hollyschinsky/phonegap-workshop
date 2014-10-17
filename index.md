@@ -1,49 +1,22 @@
----
-layout: home
-title: Cordova / PhoneGap Workshop
----
-In this tutorial, you will learn strategies and best practices to build native-like mobile applications with
-HTML, JavaScript, and CSS. You will build an Apache Cordova (aka PhoneGap) Employee Directory application from scratch using the Single Page Architecture, HTML templates, touch events, and performance optimization techniques.
+### Welcome to GitHub Pages.
+This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:
 
-## What You Will Learn:
+```
+$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+```
 
-- How to create and build (compile and package) a Cordova project using the CLI (Command Line Interface).
+If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.
 
-- How to use different data storage strategies.
+### Designer Templates
+We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.
 
-- How to use several Cordova APIs such as Geolocation, Contacts, and Camera.
+### Rather Drive Stick?
+If you prefer to not use the automatic generator, push a branch named `gh-pages` to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.
 
-- How to handle specific mobile challenges such as touch events, scrolling, styling, page transitions, etc.
+### Authors and Contributors
+You can @mention a GitHub username to generate a link to their profile. The resulting `<a>` element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (@defunkt), PJ Hyett (@pjhyett), and Tom Preston-Werner (@mojombo) founded GitHub.
 
-- How to build an application using a single-page architecture and HTML templates.
-
-
-## Requirements
-
-- To complete this workshop, all you need is a code editor, a modern browser, and a connection to the Internet.
-
-- A working knowledge of HTML and JavaScript is assumed, but you don't need to be a JavaScript guru.
-
->A mobile device or a Mobile SDK is **not** a requirement for this tutorial. However, if you want to run and test the application on a mobile device or on an emulator for a mobile platform supported by Cordova, you need the Mobile SDK for that platform (iOS SDK, Android SDK, etc.) installed on your system. If you don't want to install a Mobile SDK, you'll be able to test your application in a browser on your computer.
-
-
-## Issues
-
-- Please create an issue [here](https://github.com/ccoenraets/apache-cordova-tutorial/issues) if you run
-into any problem or if you have a suggestion to improve this workshop.
-
-- You can also use the Comments section at the bottom of each module to ask a question or report a problem.
-
-- You can contact me on Twitter:
-
-    <a href="https://twitter.com/ccoenraets" class="twitter-follow-button" data-show-count="true" 
-    data-size="large" data-lang="en">Follow 
-    @ccoenraets</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-<div class="row" style="margin-top:40px;">
-<div class="col-sm-12">
-<a href="create-cordova-project.html" class="btn btn-default pull-right">Next <i class="glyphicon
-glyphicon-chevron-right"></i></a>
-</div>
-</div>
+### Support or Contact
+Having trouble with Pages? Check out the documentation at http://help.github.com/pages or contact support@github.com and we’ll help you sort it out.
