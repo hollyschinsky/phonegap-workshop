@@ -46,7 +46,7 @@ into any problem or if you have feedback.
 
 - You can contact me on Twitter:
 
-    <a href="https://twitter.com/ccoenraets" class="twitter-follow-button" data-show-count="true" 
+    <a href="https://twitter.com/devgirlfl" class="twitter-follow-button" data-show-count="true" 
     data-size="large" data-lang="en">Follow 
     @devgirlfl</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
