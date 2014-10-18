@@ -3,28 +3,22 @@ layout: home
 title: PhoneGap Workshop
 ---
 
-## What are we building?
+## What You Will Build
 In this workshop you will learn how to create a mobile Conference Application using PhoneGap with HTML, JavaScript and CSS. Best
 practices and performance techniques will also be taught as you complete each module.
 
 ![](images/app-preview.png)
 
 
-## What You Will Learn:
+## What You Will Learn
 
-- How to create and build (compile and package) a PhoneGap project using the CLI (Command Line Interface).
+- How to create, build and run a PhoneGap project using the CLI (Command Line Interface).
 
-- How to create a PhoneGap project using the PhoneGap Desktop App.
+- How to test your app immediately using the PhoneGap Developer App on your mobile device, even without an SDK installed.
 
-- How to test a PhoneGap project using the PhoneGap Developer App on your mobile device.
+- How to handle specific mobile challenges such as touch events, scrolling, styling and page transitions
 
-- How to use different data storage strategies.
-
-- How to build an application using a single-page architecture and HTML templates.
-
-- How to handle specific mobile challenges such as touch events, scrolling, styling, page transitions, etc.
-
-- How to use several PhoneGap APIs via plugins.
+- How to use several PhoneGap APIs via plugins
 
 
 ## Requirements
@@ -37,7 +31,7 @@ practices and performance techniques will also be taught as you complete each mo
 
 
 
-## Issues
+## Issues/Feedback
 
 - Please create an issue [here](https://github.com/hollyschinsky/phonegap-workshop/issues) if you run
 into any problem or if you have feedback.
