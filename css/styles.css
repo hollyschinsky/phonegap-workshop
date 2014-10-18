@@ -35,7 +35,7 @@ blockquote {
     padding-top: 30px;
     /*background-color: #049EC4;*/
     background: #2d3033;
-    color: #FFFFFF
+    color: rgb(236, 236, 236);
 }
 
 .jumbotron h1 {
