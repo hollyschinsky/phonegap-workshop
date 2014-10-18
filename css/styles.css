@@ -92,7 +92,8 @@ blockquote {
     /*color: #31708f;
     background-color: #d9edf7;
     border-color: #bce8f1;*/
-    color: #ffffff;
+    /*color: #ffffff;*/
+    color: rgb(236, 236, 236);
     background-color: #2d3033;
     border-color: rgb(210, 209, 210);
 }
