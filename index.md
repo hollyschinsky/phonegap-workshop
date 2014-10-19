@@ -14,7 +14,7 @@ practices and performance techniques will also be taught as you complete each mo
 
 - How to create, build and run a PhoneGap project using the CLI (Command Line Interface).
 
-- How to test your app immediately using the PhoneGap Developer App on your mobile device, even without an SDK installed.
+- How to test your app immediately using the [PhoneGap Developer App](app.developer.com) on your mobile device, even without an SDK installed.
 
 - How to handle specific mobile challenges such as touch events, scrolling, styling and page transitions
 
@@ -27,7 +27,7 @@ practices and performance techniques will also be taught as you complete each mo
 
 - A working knowledge of HTML and JavaScript is assumed, but you don't need to be a JavaScript guru.
 
->A mobile device or a Mobile SDK is **not** a requirement for this tutorial. You will able to test your application in the browser or with the PhoneGap Developer App with some limitations. If you want the full support of the native APIs then you will need the mobile SDK for that platform (iOS SDK, Android SDK, etc.) installed on your system. 
+>A mobile device or a Mobile SDK is **not** a requirement for this tutorial. You will able to test your application in the browser or with the [PhoneGap Developer App](app.developer.com) with some limitations. If you want the full support of the native APIs then you will need the mobile SDK for that platform (iOS SDK, Android SDK, etc.) installed on your system. 
 
 
 

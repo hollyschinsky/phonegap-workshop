@@ -1,8 +1,4 @@
-img {
-    max-width: 100%;
-    border: solid 1px #eee;
-    margin: 8px 0;
-}
+
 .frame {
     position: relative;
     display: inline-block;

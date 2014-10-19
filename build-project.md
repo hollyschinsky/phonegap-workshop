@@ -1,6 +1,6 @@
 ---
 layout: module
-title: Module 2&#58; Building a Cordova Project
+title: Module 2&#58; Building a PhoneGap Project
 ---
 
 This module is optional. If you didn't add support for any platform in the previous module, you can skip this module 
@@ -14,7 +14,7 @@ using the steps below.
 On the command line, make sure you are in the **workshop** directory and type:
 
 ```
-cordova build ios
+phonegap build ios
 ```
 
 The project is built in the **workshop/platforms/ios** folder. Double-click **Workshop.xcodeproj** to open the project
@@ -48,18 +48,18 @@ To build the project in the **workshop/platforms/android** folder and run it on 
 computer using a USB cable, type:
 
 ```
-cordova run android
+phonegap run android
 ```
 
 To build the project in the **workshop/platforms/android** folder and run it in the Android emulator, type:
 
 ```
-cordova emulate android
+phonegap emulate android
 ```
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">
-<a href="create-cordova-project.html" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i> 
+<a href="create-project.html" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i> 
 Previous</a>
 <a href="setup-files.html" class="btn btn-default pull-right">Next <i class="glyphicon glyphicon-chevron-right"></i></a>
 </div>
