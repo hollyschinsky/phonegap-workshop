@@ -38,9 +38,7 @@ To test the JSON service, make sure the Node.js server provided as part of the m
   node server
   ```  
 
-    > The server implements CORS (Cross-Origin Resource Sharing) to support cross-site HTTP requests. You can therefore 
-    invoke the services from a file loaded from another domain or from the file system.
-
+    
 
   Since services/json/ConferenceService.js points to **localhost**, this will only work when running the 
   application in the browser on your computer, and not on your device because it doesn't know your computer 
@@ -50,6 +48,9 @@ To test the JSON service, make sure the Node.js server provided as part of the m
   you could also deploy the service on a publicly available server. In a real-life application, 
   you would typically externalize the host name in some sort of configuration file.
   
+  > The server implements CORS (Cross-Origin Resource Sharing) to support cross-site HTTP requests. You can therefore 
+      invoke the services from a file loaded from another domain or from the file system.
+
   All the other data storage services provided in www/js/services work out-of-the-box when running the application in
    the browser and 
   on device. 
