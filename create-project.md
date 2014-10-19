@@ -38,7 +38,7 @@ $ phonegap create workshop com.yourname.workshop Workshop
     you can skip this step and add support for another platform, or simply run the tutorial application in your 
     browser.
     1. Make sure the iOS SDK is available on your system.
-    2. On the command line, make sure you are in the **workshop** directory and type:
+    2. On the command line, make sure you are in the **workshop** directory and type:           
         ```
         phonegap platforms add ios
         ```
