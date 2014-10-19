@@ -7,42 +7,42 @@ It's time to provide the application with some structure. If we keep adding all 
 ## Step 1: Create the Home View
 
 
-1. Create a file named HomeView.js in the js directory, and define a HomeView constructor implemented as follows:
+1. Create a file named **HomeView.js** in the js directory, and define a **HomeView** constructor implemented as follows:
 
-    ```
+    ```javascript
     var HomeView = function (service) {
     
     }
     ```
 
 
-  >The constructor function takes the employee data service as an argument
+  >The constructor function takes the conference data service as an argument
 
-2. HomeView uses a nested view to display the list of employees. Defining the list of employees as a separate view makes it reusable in other contexts. We will define EmployeeListView in Step 2 below. For now, define a local variable to keep track of the nested view.
+2. **HomeView** uses a nested view to display the list of sessions. Defining the list of sessions as a separate view makes it reusable in other contexts. We will define SessionListView in Step 2 below. For now, define a local variable to keep track of the nested view.
 
-    ```
+    ```javascript
     var HomeView = function (service) {
     
-        var employeeListView;
+        var sessionListView;
     
     }
     ```
 
 2. Define an initialize() function inside the HomeView constructor.
     - Define a div wrapper for the view. The div wrapper is used to attach the view-related events.
-    - Instantiate the nested view (you'll define EmployeeListView in step 2).
-    - Finally, invoke the initialize() function inside the HomeView constructor function.
+    - Instantiate the nested view (you'll define SessionListView in step 2).
+    - Finally, invoke the initialize() function inside the **HomeView** constructor function.
 
-    ```
+    ```javascript
     var HomeView = function (service) {
     
-        var employeeListView;
+        var sessionListView;
         
         this.initialize = function () {
             // Define a div wrapper for the view (used to attach events)
             this.$el = $('<div/>');
             this.$el.on('keyup', '.search-key', this.findByName);
-            employeeListView = new EmployeeListView();
+            sessionListView = new SessionListView();
             this.render();
         };
         
@@ -51,9 +51,9 @@ It's time to provide the application with some structure. If we keep adding all 
     }
     ```
 
-3. Move the renderHomeView() function from app.js to the HomeView class. To keep the view reusable, attach the HTML to the div wrapper (this.el) instead of the document body. Because the function is now encapsulated in HomeView, you can also rename it from renderHomeView() to just render().
+3. Move the **renderHomeView()** function from app.js to the **HomeView** class. To keep the view reusable, attach the HTML to the div wrapper (this.el) instead of the document body. Because the function is now encapsulated in **HomeView**, you can also rename it from **renderHomeView()** to just **render()**.
 
-    ```
+    ```javascript
     this.render = function() {
         this.$el.html(this.template());
         $('.content', this.$el).html(employeeListView.$el);
@@ -61,9 +61,9 @@ It's time to provide the application with some structure. If we keep adding all 
     };
     ```
 
-4. Move the findByName() function from app.js to HomeView and adjust it to work with the nested view.
+4. Move the **findByName()** function from app.js to **HomeView** and adjust it to work with the nested view.
 
-    ```
+    ```javascript
     this.findByName = function() {
         service.findByName($('.search-key').val()).done(function(employees) {
             employeeListView.setEmployees(employees);
@@ -72,29 +72,29 @@ It's time to provide the application with some structure. If we keep adding all 
     ```
 
 
-## Step 2: Create the EmployeeList View
+## Step 2: Create the SessionList View
 
-1. Create a file named EnployeeListView.js in the js directory
+1. Create a file named SessionListView.js in the js directory
 
-2. Implement EmployeeListView as follows:
+2. Implement SessionListView as follows:
 
     ```
-    var EmployeeListView = function () {
+    var SessionListView = function () {
     
-        var employees;
+        var sessions;
         
         this.initialize = function() {
             this.$el = $('<div/>');
             this.render();
         };
         
-        this.setEmployees = function(list) {
-            employees = list;
+        this.setSessions = function(list) {
+            sessions = list;
             this.render();
         }
         
         this.render = function() {
-            this.$el.html(this.template(employees));
+            this.$el.html(this.template(sessions));
             return this;
         };
         
@@ -105,24 +105,24 @@ It's time to provide the application with some structure. If we keep adding all 
 
 ## Step 3: Using the Home View
 
-1. In index.html, add script tags to include EmployeeListView.js and HomeView.js (just **before** the script tag for app.js):
+1. In index.html, add script tags to include **SessionListView.js** and **HomeView.js** (just **before** the script tag for app.js):
 
     ```
-    <script src="js/EmployeeListView.js"></script>
+    <script src="js/SessionListView.js"></script>
     <script src="js/HomeView.js"></script>
     ```
 
 
-1. In app.js, remove the renderHomeView() function.
+1. In app.js, remove the **renderHomeView()** function.
 
-1. Remove the findByName() function.
+1. Remove the **findByName()** function.
 
 1. Modify the templates initialization. Instead of declaring them as local variables, add them to the prototype of their respective classes:
 
     ```
     HomeView.prototype.template = Handlebars.compile($("#home-tpl").html());
-    EmployeeListView.prototype.template = 
-                Handlebars.compile($("#employee-list-tpl").html());
+    SessionListView.prototype.template = 
+                Handlebars.compile($("#session-list-tpl").html());
     
     ```
 
