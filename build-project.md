@@ -36,7 +36,7 @@ sudo npm install -g ios-sim
 Then run the application in the iOS emulator:
 
 ```
-cordova emulate ios
+phonegap emulate ios
 ```
 
 ##Building for Android

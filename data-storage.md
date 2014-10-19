@@ -36,11 +36,11 @@ To test the JSON service, make sure the Node.js server provided as part of the m
 
   ```
   node server
-  ```
+  ```  
 
     > The server implements CORS (Cross-Origin Resource Sharing) to support cross-site HTTP requests. You can therefore 
     invoke the services from a file loaded from another domain or from the file system.
-    
+
 
   Since services/json/ConferenceService.js points to **localhost**, this will only work when running the 
   application in the browser on your computer, and not on your device because it doesn't know your computer 
