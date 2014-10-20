@@ -115,7 +115,7 @@ Open index.html and add a template to render a detailed session view:
 
 1. Test the application.
 
-    ![](images/routing-home.png) ![](images/session-detail.png)
+    ![](images/routing-home.png) ![](images/session-view.png)
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">
