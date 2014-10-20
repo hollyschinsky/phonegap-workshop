@@ -45,6 +45,9 @@ into any problem or if you have feedback.
     @devgirlfl</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
+## Credit
+- This tutorial was inspired and based on [Christophe Coenraet's Apache Cordova Tutorial](http://coenraets.github.io/cordova-tutorial/).  
+
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">
 <a href="create-project.html" class="btn btn-default pull-right">Next <i class="glyphicon
