@@ -15,7 +15,7 @@ In this section, we add the ability to tag a speaker with his/her location infor
   phonegap plugin add org.apache.cordova.geolocation
   ```
 
-1. In index.html, add the following list item to the employee-tpl template:
+1. In index.html, add the following list item to the session-tpl template:
 
   ```
   <li class="table-view-cell media">
@@ -36,7 +36,7 @@ In this section, we add the ability to tag a speaker with his/her location infor
 
   Make sure you add this line as the last line of the **initialize()** function (after this.$el is assigned).
 
-1. In EmployeeView, define the *addLocation* event handler as follows:
+1. In SessionView, define the *addLocation* event handler as follows:
 
   ```
   this.addLocation = function(event) {

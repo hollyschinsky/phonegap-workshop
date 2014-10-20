@@ -115,9 +115,9 @@ Open index.html and add a template to render a detailed session view:
 
 1. Test the application.
 
-    ![](images/statusbar2.png)
+    ![](images/home-view.png)
 
-    ![](images/details.png)
+    ![](images/session-detail.png)
 
 
 
