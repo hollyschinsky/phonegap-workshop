@@ -1,6 +1,6 @@
 ---
 layout: module
-title: Module 12&#58; Add native Add to Calendar Feature
+title: Module 12&#58; Add to Calendar Native Feature
 ---
 In this section, we add the ability to add a session to the native calendar on the device.
 
@@ -9,7 +9,7 @@ In this section, we add the ability to add a session to the native calendar on t
 
 ## Steps
 
-1. Add the calendar plugin to your project:
+1. Add this calendar plugin to your project:
 
   ```
   phonegap local plugin add https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin.git
@@ -29,32 +29,46 @@ In this section, we add the ability to add a session to the native calendar on t
   </li>
   ```
 
-1. In the **initialize()** function of SessionView, register an event listener for the click event of the *Add Location* list item.
+1. In the **initialize()** function of SessionView, register an event listener for the click event of the *Add* tab.
 
   ```
-  this.$el.on('click', '.add-location-btn', this.addLocation);
+  this.$el.on('click', '.addBtn', this.addToCalendar);
   ```
 
   Make sure you add this line as the last line of the **initialize()** function (after this.$el is assigned).
 
-1. In SessionView, define the *addLocation* event handler as follows:
+1. In SessionView, define the *addToCalendar* event handler as follows:
 
   ```
-  this.addLocation = function(event) {
-      event.preventDefault();
-      navigator.geolocation.getCurrentPosition(
-          function(position) {
-              alert(position.coords.latitude + ',' + position.coords.longitude);
-          },
-          function() {
-              alert('Error getting location');
-          });
-      return false;
-  };
+    this.addToCalendar = function() {
+        // create an event starting now, lasting an hour
+        if (window.plugins.calendar) {
+            var ampm = session.time.substr(session.time.length-2,2)
+            var hour = session.time.substring(0,session.time.indexOf(':'));
+            if (ampm=="pm")
+                hour = parseInt(hour)+12;
+
+            var startDate = new Date(2014,9,23,hour,00,00);
+            var endDate = new Date();
+            endDate.setTime(startDate.getTime() + 3600000);
+
+            var calSuccess = function (message) {
+                alert(session.title + " has been added to your calendar.");
+            };
+            var calError = function (message) {
+                alert("Error: " + message);
+            };
+            window.plugins.calendar.createEvent(session.title, session.room, session.description, startDate, endDate, calSuccess, calError);
+        }
+        else alert("Unsupported: You must be running on a device to use this feature.");
+    }
   ```
 
 1. Test the Application
 
+You should see a notification such as below, and a new entry added to your native calendar on October 24th:
+
+![](images/add-calendar.png) 
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">

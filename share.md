@@ -1,6 +1,6 @@
 ---
 layout: module
-title: Module 12&#58; Add native Share Feature
+title: Module 12&#58; Add Native Share Feature
 ---
 In this section, we add the ability to share the session details through the device's native sharing options. 
 
@@ -29,32 +29,35 @@ In this section, we add the ability to share the session details through the dev
   </li>
   ```
 
-1. In the **initialize()** function of SessionView, register an event listener for the click event of the *Add Location* list item.
+1. In the **initialize()** function of SessionView, register an event listener for the click event of the *share* tab.
 
   ```
-  this.$el.on('click', '.add-location-btn', this.addLocation);
+  this.$el.on('click', '.shareBtn', this.share);
   ```
 
   Make sure you add this line as the last line of the **initialize()** function (after this.$el is assigned).
 
-1. In SessionView, define the *addLocation* event handler as follows:
+1. In SessionView, define the *share* event handler as follows:
 
   ```
-  this.addLocation = function(event) {
-      event.preventDefault();
-      navigator.geolocation.getCurrentPosition(
-          function(position) {
-              alert(position.coords.latitude + ',' + position.coords.longitude);
-          },
-          function() {
-              alert('Error getting location');
-          });
-      return false;
-  };
+  this.share = function() {
+    if (window.plugins.socialsharing) {
+        window.plugins.socialsharing.share("I'll be attending the session: " + session.title + ".",
+            'PhoneGap Day 2014', null, "http://pgday.phonegap.com/us2014",
+            new function () {
+                console.log("Success")
+            },
+            new function (error) {
+                console.log("Share fail " + error)
+            });
+    }
+    else alert("Unsupported: You must be running on a device to use this feature.");
+}
   ```
 
 1. Test the Application
 
+![](images/share.png)
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">
