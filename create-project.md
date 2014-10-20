@@ -42,9 +42,9 @@ $ phonegap create workshop com.yourname.workshop Workshop
                   
                   
                                 
-    ```
-    phonegap platforms add ios
-    ```
+        ```
+        phonegap platforms add ios
+        ```
         
 1. Add support for the Android platform (optional)
     > To be able to build for the Android platform, the Android SDK must be installed on your system. If it's not, 
