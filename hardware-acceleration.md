@@ -22,7 +22,7 @@ Modify index.html as follows:
   <script src="lib/pageslider.js"></script>
   ```
 
-  >PageSlider is a micro library I host on GitHub <a href="https://github.com/ccoenraets/PageSlider">here</a>.
+  >PageSlider is a micro library hosted by Christophe Coenraets on GitHub <a href="https://github.com/ccoenraets/PageSlider">here</a>.
 
 
 Modify app.js as follows:
@@ -43,7 +43,7 @@ Modify app.js as follows:
   and
 
   ```
-  slider.slidePage(new EmployeeView(employee).render().$el);
+  slider.slidePage(new SessionView(session).render().$el);
   ```
 
 <div class="row" style="margin-top:40px;">

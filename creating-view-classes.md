@@ -7,7 +7,7 @@ It's time to provide the application with some structure. If we keep adding all 
 ## Step 1: Create the Home View
 
 
-1. Create a file named **HomeView.js** in the js directory, and define a **HomeView** constructor implemented as follows:
+1. Create a file named HomeView.js in the js directory, and define a **HomeView** constructor implemented as follows:
 
     ```javascript
     var HomeView = function (service) {
@@ -56,7 +56,7 @@ It's time to provide the application with some structure. If we keep adding all 
     ```javascript
     this.render = function() {
         this.$el.html(this.template());
-        $('.content', this.$el).html(employeeListView.$el);
+        $('.content', this.$el).html(sessionListView.$el);
         return this;
     };
     ```
@@ -65,8 +65,8 @@ It's time to provide the application with some structure. If we keep adding all 
 
     ```javascript
     this.findByName = function() {
-        service.findByName($('.search-key').val()).done(function(employees) {
-            employeeListView.setEmployees(employees);
+        service.findByName($('.search-key').val()).done(function(sessions) {
+            sessionListView.setSessions(session);
         });
     };
     ```
@@ -105,7 +105,7 @@ It's time to provide the application with some structure. If we keep adding all 
 
 ## Step 3: Using the Home View
 
-1. In index.html, add script tags to include **SessionListView.js** and **HomeView.js** (just **before** the script tag for app.js):
+1. In index.html, add script tags to include SessionListView.js and HomeView.js (just **before** the script tag for app.js):
 
     ```
     <script src="js/SessionListView.js"></script>

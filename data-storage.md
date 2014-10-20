@@ -6,6 +6,7 @@ title: Module 4&#58; Choosing a Data Storage Strategy
 
 Open the following files and explore the different persistence services:
 
+**
 1. www/js/services/memory/ConferenceService.js
 
 1. www/js/services/json/ConferenceService.js
@@ -13,6 +14,7 @@ Open the following files and explore the different persistence services:
 1. www/js/services/localstorage/ConferenceService.js
 
 1. www/js/services/websql/ConferenceService.js
+**
 
 ## Step 2: Test the application with different persistence mechanisms
 

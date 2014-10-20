@@ -48,7 +48,6 @@ A default JavaScript alert gives away the fact that your application is not nati
 
 
 
-
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">
 <a href="build-project.html" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i> 

@@ -2,17 +2,17 @@
 layout: module
 title: Module 12&#58; Using the Location API
 ---
-In this section, we add the ability to tag an employee with his/her location information. In this sample application, we display the raw information (longitude/latitude) in an alert. In a real-life application, we would typically save the location in the database as part of the employee information and show it on a map.
+In this section, we add the ability to tag a speaker with his/her location information. In this sample application, we display the raw information (longitude/latitude) in an alert. In a real-life application, we would typically save the location in the database as part of the speaker information and show it on a map.
 
-> The code below works when running the application as a Cordova app on your device. It should also work in Chrome on the desktop when the page is served with the http:// protocol, and in Firefox, regardless of the protocol (http:// or file://).
+> The code below works when running the application as a PhoneGap app on your device. It should also work in Chrome on the desktop when the page is served with the http:// protocol, and in Firefox, regardless of the protocol (http:// or file://).
 
 
 ## Steps
 
-1. Add the geolocaton plugin to your project:
+1. Add the geolocation plugin to your project:
 
   ```
-  cordova plugin add org.apache.cordova.geolocation
+  phonegap plugin add org.apache.cordova.geolocation
   ```
 
 1. In index.html, add the following list item to the employee-tpl template:
@@ -28,13 +28,13 @@ In this section, we add the ability to tag an employee with his/her location inf
   </li>
   ```
 
-1. In the initialize() function of EmployeeView, register an event listener for the click event of the *Add Location* list item.
+1. In the **initialize()** function of SessionView, register an event listener for the click event of the *Add Location* list item.
 
   ```
   this.$el.on('click', '.add-location-btn', this.addLocation);
   ```
 
-  Make sure you add this line as the last line of the initialize() function (after this.$el is assigned).
+  Make sure you add this line as the last line of the **initialize()** function (after this.$el is assigned).
 
 1. In EmployeeView, define the *addLocation* event handler as follows:
 

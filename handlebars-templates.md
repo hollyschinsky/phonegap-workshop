@@ -31,7 +31,7 @@ Modify index.html as follows:
     ````
     <script id="home-tpl" type="text/template">
         <header class="bar bar-nav">
-            <h1 class="title">Directory</h1>
+            <h1 class="title">Conference App</h1>
         </header>
         <div class="bar bar-standard bar-header-secondary">
             <input class='search-key' type="search"/>
@@ -40,15 +40,15 @@ Modify index.html as follows:
     </script>
     ````
 
-1. Create an HTML template to render the employee list. Add this script tag immediately after the previous one:
+1. Create an HTML template to render the sessions list. Add this script tag immediately after the previous one:
 
     ````
     {% raw %}
-    <script id="employee-list-tpl" type="text/template">
+    <script id="session-list-tpl" type="text/template">
         <ul class="table-view">
             {{#each this}}
             <li class="table-view-cell media">
-              <a href="#employees/{{ id }}">
+              <a href="#sessions/{{ id }}">
                   <img class="media-object pull-left" src="assets/pics/{{pic}}">
                   <div class="media-body">
                       {{firstName}} {{lastName}}
@@ -71,10 +71,10 @@ Modify the immediate function in app.js as follows:
 
     ````
     var homeTpl = Handlebars.compile($("#home-tpl").html());
-    var employeeListTpl = Handlebars.compile($("#employee-list-tpl").html());
+    var sessionListTpl = Handlebars.compile($("#session-list-tpl").html());
     ````
 
-1. Modify renderHomeView() to use the homeTpl template instead of the inline HTML:
+1. Modify **renderHomeView()** to use the *homeTpl* template instead of the inline HTML:
 
     ````
     function renderHomeView() {
@@ -83,12 +83,12 @@ Modify the immediate function in app.js as follows:
     }
     ````
 
-1. Modify findByName() to use the employeeListTpl template instead of the inline HTML:
+1. Modify **findByName()** to use the sessionListTpl template instead of the inline HTML:
 
     ````
     function findByName() {
-        service.findByName($('.search-key').val()).done(function (employees) {
-            $('.content').html(employeeListTpl(employees));
+        service.findByName($('.search-key').val()).done(function (sessions) {
+            $('.content').html(sessionListTpl(sessions));
         });
     }
     ````
@@ -96,31 +96,6 @@ Modify the immediate function in app.js as follows:
 1. Test the application.
 
     ![](images/statusbar1.png)
-
-
-## Step 3: Fixing the Status Bar Issue on iOS7
-
-In iOS7, the status bar overlaps the application views. As a result, the status bar text may collide with the 
-application's header text as shown in the screenshot above. You can fix this issue using the statusbar plugin. 
-
-1. Add the status bar plugin:
-
-    ```
-    cordova plugins add org.apache.cordova.statusbar
-    ```
-
-2. In app.js, add the following code at the top of the deviceready handler:
-
-    ```
-    StatusBar.overlaysWebView( false );
-    StatusBar.backgroundColorByHexString('#ffffff');
-    StatusBar.styleDefault();
-    ```
-
-3. Build the application again and test your application in the iOS emulator or on an iOS device.
-
-    ![](images/statusbar2.png)
-
 
 
 <div class="row" style="margin-top:40px;">
