@@ -37,17 +37,18 @@ In this section, we add the ability to share the session details through the dev
 
   ```
   this.share = function() {
-    if (window.plugins.socialsharing) {
-        window.plugins.socialsharing.share("I'll be attending the session: " + session.title + ".",
-            'PhoneGap Day 2014', null, "http://pgday.phonegap.com/us2014",
-            new function () {
-                console.log("Success")
-            },
-            new function (error) {
-                console.log("Share fail " + error)
-            });
-    }
-    else alert("Unsupported: You must be running on a device to use this feature.");
+      if (window.plugins.socialsharing) {
+          window.plugins.socialsharing.share("I'll be attending the session: " + session.title + ".",
+              'PhoneGap Day 2014', null, "http://pgday.phonegap.com/us2014",
+              function () {
+                  console.log("Success")
+              },
+              function (error) {
+                  console.log("Share fail " + error)
+              });
+      }
+      else alert("Unsupported: You must be running on a device to use this feature.");
+  }
 }
   ```
 
