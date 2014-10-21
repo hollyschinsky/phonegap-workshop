@@ -18,7 +18,7 @@ var HomeView = function (service) {
 
     this.findByName = function() {
         service.findByName($('.search-key').val()).done(function(sessions) {
-            sessionListView.setSessions(sessions);
+            sessionListView.setSessions(session);
         });
     };
 
