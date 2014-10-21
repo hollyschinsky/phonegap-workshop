@@ -36,7 +36,6 @@ var SessionView = function(session) {
                     console.log("Calendar fail " + error);
                 });
         }
-        else alert("Unsupported: You must be running on a device to use this feature.");
     }
 
     // Share tab event handler
@@ -51,7 +50,6 @@ var SessionView = function(session) {
                     console.log("Share fail " + error)
                 });
         }
-        else alert("Unsupported: You must be running on a device to use this feature.");
     }
 
     this.initialize();
