@@ -4,7 +4,7 @@ title: Module 5&#58; Using Native Notification
 ---
 A default JavaScript alert gives away the fact that your application is not native. In this section, we set up the basic infrastructure to display native alerts when the application is running on a device, and fall back to default JavaScript alerts when it is running in the browser.
 
-![](images/alert-js.png)
+![](images/oldnotification.png)
 
 ##Steps
 
@@ -45,7 +45,7 @@ A default JavaScript alert gives away the fact that your application is not nati
     - When you run the application in the browser, you should see a standard browser alert.
     - When you run the application on your device, you should see a native alert.
 
-
+![](images/newnotification.png)
 
 
 <div class="row" style="margin-top:40px;">
