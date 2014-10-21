@@ -20,33 +20,33 @@ If you already have PhoneGap installed on your computer, make sure you upgrade t
 
 1. Navigate (cd) to a directory where you store projects on your file system.
 
-1. Using the PhoneGap CLI, create a PhoneGap project named **Workshop** in a directory named **workshop**:
+2. Using the PhoneGap CLI, create a PhoneGap project named **Workshop** in a directory named **workshop**:
 
-```
-$ phonegap create workshop com.yourname.workshop Workshop
-```
+    ```
+     phonegap create workshop com.yourname.workshop Workshop
+    ```
 
-1. Navigate to the project directory:
+3. Navigate into the project directory:
 
-  ```
-  cd workshop
-  ```
+    ```
+    cd workshop
+    ```
 
-1. Add support for the iOS platform (optional)
+4. Add support for the iOS platform (optional)
 
     > To be able to build for the iOS platform, the iOS SDK must be installed on your system. If it's not, 
     you can skip this step and add support for another platform, or simply run the tutorial application in your 
     browser.
     1. Make sure the iOS SDK is available on your system.
     2. On the command line, make sure you are in the **workshop** directory and type: 
-                  
-                  
+                                    
                                 
         ```
         phonegap platforms add ios
         ```
         
-1. Add support for the Android platform (optional)
+5. Add support for the Android platform (optional)
+
     > To be able to build for the Android platform, the Android SDK must be installed on your system. If it's not, 
     you can skip this step and add support for another platform, or simply run the tutorial application in your browser.
     1. Make sure the Android SDK and the ant build tool are available on your system. The Android SDK is available 
@@ -57,15 +57,15 @@ $ phonegap create workshop com.yourname.workshop Workshop
         phonegap platforms add android
         ```
 
-1. Make sure you are in the **workshop** directory, and add basic plugins to your projects:
+1. Make sure you are in the **workshop** directory, and add these basic plugins to your projects:
 
-  ```
-  phonegap plugin add org.apache.cordova.console
-  phonegap plugin add org.apache.cordova.device
-
-  ```
+      ```
+      phonegap plugin add org.apache.cordova.console
+      phonegap plugin add org.apache.cordova.device
+    
+      ```
   
-  * The console plugin is needed to see any console messages you might be writing in your app (console.log("XYZ")). These two plugins are recommended to be added to all of your projects after creation. 
+  * The console plugin is needed to see any console messages you might be writing in your app (*console.log("XYZ")*).  
   * The device plugin allows you to access device specific information so you can detect platform (iOS, android etc), version etc. 
   
 1. Examine the directory structure under workshop.

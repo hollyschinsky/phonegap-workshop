@@ -44,7 +44,7 @@ To test the JSON service, make sure the Node.js server provided as part of the m
           invoke the services from a file loaded from another domain or from the file system.
 
 
-  Since services/json/ConferenceService.js points to **localhost**, this will only work when running the 
+  Since *services/json/ConferenceService.js* points to **localhost**, this will only work when running the 
   application in the browser on your computer, and not on your device because it doesn't know your computer 
   as "localhost". To make the JSON service work when running the application on your device, 
   make sure your computer and device are on the same subnet, identify the ip address of your computer, 
