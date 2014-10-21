@@ -10,18 +10,18 @@
     /* --------------------------------- Event Registration -------------------------------- */
     $('.search-key').on('keyup', findByName);
     $('.help-btn').on('click', function() {
-        alert("conference Directory v3.4");
+        alert("PhoneGap Day v1.0");
     });
 
     /* ---------------------------------- Local Functions ---------------------------------- */
     function findByName() {
-        service.findByName($('.search-key').val()).done(function (conferences) {
-            var l = conferences.length;
+        service.findByName($('.search-key').val()).done(function (sessions) {
+            var l = sessions.length;
             var e;
-            $('.conference-list').empty();
+            $('.session-list').empty();
             for (var i = 0; i < l; i++) {
-                e = conferences[i];
-                $('.conference-list').append('<li><a href="#conferences/' + e.id + '">' + e.firstName + ' ' + e.lastName + '</a></li>');
+                e = sessions[i];
+                $('.session-list').append('<li><a href="#sessions/' + e.id + '">' + e.firstName + ' ' + e.lastName + '</a></li>');
             }
         });
     }

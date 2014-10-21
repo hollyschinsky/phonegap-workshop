@@ -3,7 +3,7 @@ var ConferenceService = function() {
     var url;
 
     this.initialize = function(serviceURL) {
-        url = serviceURL ? serviceURL : "http://localhost:5000/conferences";
+        url = serviceURL ? serviceURL : "http://localhost:5000/sessions";
         var deferred = $.Deferred();
         deferred.resolve();
         return deferred.promise();
