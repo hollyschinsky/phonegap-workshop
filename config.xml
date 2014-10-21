@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="org.devgirl.phonegap.workshop" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>ConferenceApp</name>
+<widget id="org.devgirl.day.phonegap" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>PhoneGapDayApp</name>
     <description>
         Simple conference tracking app.
     </description>
@@ -12,7 +12,7 @@
     <access origin="*" />
 
     <!-- Keyboard config -->
-    <preference name="KeyboardDisplayRequiresUserAction" value="false" />
+    <!--<preference name="KeyboardDisplayRequiresUserAction" value="false" />-->
 
     <!-- Status Bar config -->
     <!-- ** Set overlay to false to leave space at the top like iOS6, iOS7 and above made status bar transparent
