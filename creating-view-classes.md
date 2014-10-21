@@ -66,7 +66,7 @@ It's time to provide the application with some structure. If we keep adding all 
     ```javascript
     this.findByName = function() {
         service.findByName($('.search-key').val()).done(function(sessions) {
-            sessionListView.setSessions(session);
+            sessionListView.setSessions(sessions);
         });
     };
     ```
@@ -136,6 +136,9 @@ It's time to provide the application with some structure. If we keep adding all 
 
 1. Test the application
 
+![](images/create-views-pg9.png)
+
+####  It should look exactly the same as it did in the previous module but the structure of how it all rendered is now different due to the view classes. 
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">

@@ -57,8 +57,8 @@ Open index.html and add a template to render a detailed session view:
 
 1. Create a file named SessionView.js in the js directory, and define it as follows:
 
-
-  ```var SessionView = function(session) {
+  ```
+  var SessionView = function(session) {
 
       this.initialize = function() {
           this.$el = $('<div/>');
@@ -70,7 +70,6 @@ Open index.html and add a template to render a detailed session view:
       };
 
       this.initialize();
-
   }
   ```
 

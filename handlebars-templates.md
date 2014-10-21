@@ -95,7 +95,7 @@ Modify the immediate function in app.js as follows:
 
 1. Test the application.
 
-    ![](images/statusbar1.png)
+    ![](images/handlebars-pg.png)
 
 
 <div class="row" style="margin-top:40px;">
