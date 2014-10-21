@@ -2,45 +2,28 @@
 (function () {
 
     /* ---------------------------------- Local Variables ---------------------------------- */
-    HomeView.prototype.template = Handlebars.compile($("#home-tpl").html());
-    SessionListView.prototype.template = Handlebars.compile($("#session-list-tpl").html());
-    SessionView.prototype.template = Handlebars.compile($("#session-tpl").html());
-
     var service = new ConferenceService();
-    var slider = new PageSlider($('body'));
-
     service.initialize().done(function () {
-        router.addRoute('', function() {
-            console.log('empty');
-            slider.slidePage(new HomeView(service).render().$el);
-        });
-
-        router.addRoute('sessions/:id', function(id) {
-            console.log('details');
-            service.findById(parseInt(id)).done(function(session) {
-                slider.slidePage(new SessionView(session).render().$el);
-            });
-        });
-
-        router.start();
+        console.log("Service initialized");
     });
 
     /* --------------------------------- Event Registration -------------------------------- */
-    document.addEventListener('deviceready', function () {
-        FastClick.attach(document.body);
-        if (navigator.notification) { // Override default HTML alert with native dialog
-            window.alert = function (message) {
-                navigator.notification.alert(
-                    message,    // message
-                    null,       // callback
-                    "Workshop", // title
-                    'OK'        // buttonName
-                );
-            };
-        }
-    }, false);
+    $('.search-key').on('keyup', findByName);
+    $('.help-btn').on('click', function() {
+        alert("PhoneGap Day v1.0");
+    });
 
     /* ---------------------------------- Local Functions ---------------------------------- */
-
+    function findByName() {
+        service.findByName($('.search-key').val()).done(function (sessions) {
+            var l = sessions.length;
+            var e;
+            $('.session-list').empty();
+            for (var i = 0; i < l; i++) {
+                e = sessions[i];
+                $('.session-list').append('<li><a href="#sessions/' + e.id + '">' + e.firstName + ' ' + e.lastName + '</a></li>');
+            }
+        });
+    }
 
 }());
