@@ -12,22 +12,18 @@ In this section, we add the ability to share the session details through the dev
 1. Add the social sharing plugin to your project:
 
   ```
-  phonegap plugin add https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin/
+  $ phonegap plugin add https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin/
 
   ```
 
-1. In index.html, add the following list item to the session-tpl template:
+1. In index.html, add the following tab to the tab bar in the *session-tpl* template:
 
-  ```
-  <li class="table-view-cell media">
-      <a hre="#" class="push-right add-location-btn">
-          <span class="media-object pull-left"></span>
-          <div class="media-body">
-              Add location
-          </div>
-      </a>
-  </li>
-  ```
+    ```
+    <div class="shareBtn tab-item">
+        <span class="icon icon-share"></span>
+        <span class="tab-label">Share</span>
+    </div>
+    ```
 
 1. In the **initialize()** function of SessionView, register an event listener for the click event of the *share* tab.
 
@@ -63,8 +59,7 @@ In this section, we add the ability to share the session details through the dev
 <div class="col-sm-12">
 <a href="add-to-calendar.html" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i> 
 Previous</a>
-<!--<a href="contacts-api.html" class="btn btn-default pull-right">Next <i class="glyphicon 
-glyphicon-chevron-right"></i></a>-->
+
 </div>
 </div>
 

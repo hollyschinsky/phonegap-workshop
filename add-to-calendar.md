@@ -12,22 +12,18 @@ In this section, we add the ability to add a session to the native calendar on t
 1. Add this calendar plugin to your project:
 
   ```
-  phonegap local plugin add https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin.git
+  $ phonegap local plugin add https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin.git
 
   ```
 
-1. In index.html, add the following list item to the session-tpl template:
+1. In index.html, add the following tab to the tab-bar *session-tpl* template:
 
-  ```
-  <li class="table-view-cell media">
-      <a hre="#" class="push-right add-location-btn">
-          <span class="media-object pull-left"></span>
-          <div class="media-body">
-              Add location
-          </div>
-      </a>
-  </li>
-  ```
+      ```
+      <div class="addBtn tab-item">
+            <span class="icon icon-plus"></span>
+            <span class="tab-label">Add</span>
+      </div>
+      ```
 
 1. In the **initialize()** function of SessionView, register an event listener for the click event of the *Add* tab.
 
@@ -39,18 +35,16 @@ In this section, we add the ability to add a session to the native calendar on t
 
 1. In SessionView, define the *addToCalendar* event handler as follows:
 
-  ```
+    ```
     this.addToCalendar = function() {
-        // create an event starting now, lasting an hour
         if (window.plugins.calendar) {
-            var ampm = session.time.substr(session.time.length-2,2)
             var hour = session.time.substring(0,session.time.indexOf(':'));
-            if (ampm=="pm")
+            if (session.time.indexOf("pm")>-1)
                 hour = parseInt(hour)+12;
 
             var startDate = new Date(2014,9,23,hour,00,00);
             var endDate = new Date();
-            endDate.setTime(startDate.getTime() + 3600000);
+            endDate.setTime(startDate.getTime() + 3600000);//one hour
 
             var calSuccess = function (message) {
                 alert(session.title + " has been added to your calendar.");
@@ -58,11 +52,14 @@ In this section, we add the ability to add a session to the native calendar on t
             var calError = function (message) {
                 alert("Error: " + message);
             };
-            window.plugins.calendar.createEvent(session.title, session.room, session.description, startDate, endDate, calSuccess, calError);
+            window.plugins.calendar.createEvent(session.title, session.room, session.description, startDate, endDate,
+                function(){alert(session.title + " has been added to your calendar.");}, function (error) {
+                    console.log("Calendar fail " + error);
+                });
         }
         else alert("Unsupported: You must be running on a device to use this feature.");
     }
-  ```
+    ```
 
 1. Test the Application
 
