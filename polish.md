@@ -7,7 +7,7 @@ This module is going to take you through a couple steps to polish the applicatio
 ####Styling
 1. Open the assets/css/styles.css and add the following to the bottom to style the header bar, search bar and icons:
 
-        ```
+        
         .media>p {
             color: #444;
         }
@@ -24,7 +24,7 @@ This module is going to take you through a couple steps to polish the applicatio
         .bar-header-secondary {
             background-color: #eeeeee;
         }
-        ```
+        
 1. Test the application
 
     ![](images/statusbar1.png)
@@ -82,16 +82,16 @@ We can suppress the accessory keyboard that pops up with the **Done** button on 
 
 1. Add the [Ionic Keyboard Plugin](https://github.com/driftyco/ionic-plugins-keyboard):
 
-  ```  
-  phonegap plugin add https://github.com/driftyco/ionic-plugins-keyboard
-  ```
+  
+        phonegap plugin add https://github.com/driftyco/ionic-plugins-keyboard
+  
   
 2. In app.js, add the following code at the top of the **deviceready** handler:
 
-```
-    if (cordova.plugins.Keyboard)
-        cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-```            
+
+        if (cordova.plugins.Keyboard)
+            cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+           
 
 3. Now build the application again and test to see the result.
 
@@ -106,9 +106,9 @@ You can disable this effect by setting a property in the config.xml file.
 
 1. In the root project config.xml, add the following property to the end of the preferences:
 
-```
-<preference name="DisallowOverscroll" value="true" />
-```
+
+        <preference name="DisallowOverscroll" value="true" />
+
 
 2. Now build and run the application again and the webview should stay in place. 
 
@@ -118,9 +118,9 @@ You may want to set a default application icon to be used for all the icons in y
 
 1. In the root project's config.xml, add the following property to point to the icon *phonegap_wings.png* from the initial project download. 
 
-        ```
+        
         <icon src="phonegap_wings.png" />
-        ```
+        
 Note that this path is relative to the project root. 
 
 2. Now build and run the application again. If you go to the home screen (shift+cmd+h from simulator), you will see the icon is now displayed as wings. You can see that it's also set for the spotlight search.
