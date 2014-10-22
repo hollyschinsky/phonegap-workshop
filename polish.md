@@ -60,17 +60,18 @@ There are two options for fixing this issue, via configuration or programmatical
 2.Programatically:
   In app.js, add the following code at the top of the **deviceready** handler:
 
-    ```
+    
     StatusBar.overlaysWebView( false );
     StatusBar.backgroundColorByHexString('#209dc2');
     StatusBar.styleLightContent();
-    ```
+    
 
 
-2. Now build and run the application again to see the results:
+3. Now build and run the application again to see the results:
 
 ![](images/statusbar2.png)
     
+  
     
 ###Keyboard Accessory Bar 
 
