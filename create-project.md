@@ -33,17 +33,18 @@ title: Module 1&#58; Creating a PhoneGap Project
     ```
 
 6. Add support for the iOS platform (optional)
-
-> To be able to build for the iOS platform, the iOS SDK must be installed on your system. If it's not, 
-you can skip this step and add support for another platform, or simply run the tutorial application in your 
-browser.
-1. Make sure the iOS SDK is available on your system.
-2. On the command line, make sure you are in the **workshop** directory and type: 
-                                    
-                                
+    1. Make sure the iOS SDK is available on your system.
+    2. On the command line, make sure you are in the **workshop** directory and type: 
+    
     ```        
     phonegap platforms add ios
     ```        
+    
+> To be able to build for the iOS platform, the iOS SDK must be installed on your system. If it's not, 
+you can skip this step and add support for another platform, or simply run the tutorial application in your 
+browser.
+                                    
+                                   
         
 7. Add support for the Android platform (optional)
 
