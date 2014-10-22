@@ -50,21 +50,21 @@ There are two options for fixing this issue, via configuration or programmatical
    Setting overlay to false will move our app content below the status bar. We're also setting the status bar background style and text/icons to match the app:   
    
    Open the config.xml file and add the following lines to the end of the preferences:
-   
-   ```
+  
+```      
    <preference name="StatusBarOverlaysWebView" value="false" />
    <preference name="StatusBarBackgroundColor" value="#209dc2"/>
    <preference name="StatusBarStyle" value="lightcontent" />
-    ```     
+```    
 
 2.Programatically:
   In app.js, add the following code at the top of the **deviceready** handler:
 
-    
+```    
     StatusBar.overlaysWebView( false );
     StatusBar.backgroundColorByHexString('#209dc2');
     StatusBar.styleLightContent();
-    
+```    
 
 
 3. Now build and run the application again to see the results:
