@@ -5,7 +5,7 @@ title: Module 6&#58; Avoiding the 300ms Click Delay
 ##Steps
 1. Test the application on your iOS device or in the iOS emulator: Tap the Help button, and notice the delay before the dialog appears.
   
-  >This delay occurs because the operating system is waiting roughly 300ms to see if the user is going to tap the target again (and therefore perform a double-tap).
+    >This delay occurs because the operating system is waiting roughly 300ms to see if the user is going to tap the target again (and therefore perform a double-tap).
 
 2. In index.html, add the following script tag:
 
