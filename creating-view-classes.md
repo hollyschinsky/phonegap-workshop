@@ -16,11 +16,11 @@ It's time to provide the application with some structure. If we keep adding all 
     ```
 
 
-  >The constructor function takes the conference data service as an argument
+   > The constructor function takes the conference data service as an argument
 
 2. **HomeView** uses a nested view to display the list of sessions. Defining the list of sessions as a separate view makes it reusable in other contexts. We will define SessionListView in Step 2 below. For now, define a local variable to keep track of the nested view.
 
-    ```javascript
+    ```    
     var HomeView = function (service) {
     
         var sessionListView;
@@ -33,7 +33,7 @@ It's time to provide the application with some structure. If we keep adding all 
     - Instantiate the nested view (you'll define SessionListView in step 2).
     - Finally, invoke the initialize() function inside the **HomeView** constructor function.
 
-    ```javascript
+    ```    
     var HomeView = function (service) {
     
         var sessionListView;
@@ -46,14 +46,13 @@ It's time to provide the application with some structure. If we keep adding all 
             this.render();
         };
         
-        this.initialize();
-    
+        this.initialize();    
     }
     ```
 
 3. Move the **renderHomeView()** function from app.js to the **HomeView** class. To keep the view reusable, attach the HTML to the div wrapper (this.el) instead of the document body. Because the function is now encapsulated in **HomeView**, you can also rename it from **renderHomeView()** to just **render()**.
 
-    ```javascript
+    ```
     this.render = function() {
         this.$el.html(this.template());
         $('.content', this.$el).html(sessionListView.$el);
@@ -63,7 +62,7 @@ It's time to provide the application with some structure. If we keep adding all 
 
 4. Move the **findByName()** function from app.js to **HomeView** and adjust it to work with the nested view.
 
-    ```javascript
+    ```
     this.findByName = function() {
         service.findByName($('.search-key').val()).done(function(sessions) {
             sessionListView.setSessions(sessions);
@@ -76,7 +75,7 @@ It's time to provide the application with some structure. If we keep adding all 
 
 1. Create a file named SessionListView.js in the js directory
 
-2. Implement SessionListView as follows:
+2. Implement **SessionListView** as follows:
 
     ```
     var SessionListView = function () {
