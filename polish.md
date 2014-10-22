@@ -49,9 +49,8 @@ In either case, set the *overlay* setting to false to move our app content below
    
 Choose to implement **ONE** of the options below:
 
-    **Configuration (config.xml)**:
-       
-    Open the config.xml file and add the following lines to the end of the preferences:
+**Configuration (config.xml)**:
+Open the config.xml file and add the following lines to the end of the preferences:
   
         ```      
            <preference name="StatusBarOverlaysWebView" value="false" />
@@ -59,8 +58,8 @@ Choose to implement **ONE** of the options below:
            <preference name="StatusBarStyle" value="lightcontent" />
         ```    
 
-    **Programatically**:
-    Open app.js and add the following code at the top of the **deviceready** handler:
+**Programatically**:
+Open app.js and add the following code at the top of the **deviceready** handler:
     
     ```    
         StatusBar.overlaysWebView( false );
