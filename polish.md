@@ -43,13 +43,15 @@ application's header text as shown in the screenshot above. You can fix this iss
     phonegap plugins add org.apache.cordova.statusbar
     ```
 
-2. There are two options for fixing this issue, via configuration or programmatically. Choose to implement one of the options below:
+2. There are two options for using the statusbar to fix this issue, via configuration or programmatically. 
+
+In either case, set the *overlay* setting to false to move our app content below the status bar. Also use the other options to set the status bar background style and text/icons to match the app header colors:   
+   
+Choose to implement **ONE** of the options below:
 
     **Configuration (config.xml)**:
-   
-    Setting overlay to false will move our app content below the status bar. We're also setting the status bar background style and text/icons to match the app:   
-   
-        Open the config.xml file and add the following lines to the end of the preferences:
+       
+    Open the config.xml file and add the following lines to the end of the preferences:
   
         ```      
            <preference name="StatusBarOverlaysWebView" value="false" />
@@ -58,7 +60,7 @@ application's header text as shown in the screenshot above. You can fix this iss
         ```    
 
     **Programatically**:
-      In app.js, add the following code at the top of the **deviceready** handler:
+    Open app.js and add the following code at the top of the **deviceready** handler:
     
     ```    
         StatusBar.overlaysWebView( false );
