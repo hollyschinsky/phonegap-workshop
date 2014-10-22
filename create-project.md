@@ -40,24 +40,24 @@ title: Module 1&#58; Creating a PhoneGap Project
     phonegap platforms add ios
     ```        
     
-> To be able to build for the iOS platform, the iOS SDK must be installed on your system. If it's not, 
-you can skip this step and add support for another platform, or simply run the tutorial application in your 
-browser.
+    > To be able to build for the iOS platform, the iOS SDK must be installed on your system. If it's not, 
+    you can skip this step and add support for another platform, or simply run the tutorial application in your 
+    browser.
                                     
                                    
         
 7. Add support for the Android platform (optional)
 
-> To be able to build for the Android platform, the Android SDK must be installed on your system. If it's not, 
-you can skip this step and add support for another platform, or simply run the tutorial application in your browser.
-1. Make sure the Android SDK and the ant build tool are available on your system. The Android SDK is available 
-[here](http://developer.android.com/sdk). Both the **android** and **ant** tools must be available in your path.
-2. On the command line, make sure you are in the **workshop** directory and type:
-
-        
+    1. Make sure the Android SDK and the ant build tool are available on your system. The Android SDK is available 
+    [here](http://developer.android.com/sdk). Both the **android** and **ant** tools must be available in your path.    
+    2. On the command line, make sure you are in the **workshop** directory and type:
+    
     ```
     phonegap platforms add android
-    ```        
+    ```   
+         
+    > To be able to build for the Android platform, the Android SDK must be installed on your system. If it's not, 
+    you can skip this step and add support for another platform, or simply run the tutorial application in your browser.
 
 8. Make sure you are in the **workshop** directory, and add these basic plugins to your projects:
 
