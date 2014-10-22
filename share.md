@@ -31,7 +31,7 @@ In this section, we add the ability to share the session details through the dev
   this.$el.on('click', '.shareBtn', this.share);
   ```
 
-    >Make sure you add this line as the last line of the **initialize()** function (after this.$el is assigned).
+    > Make sure you add this line as the last line of the **initialize()** function (after this.$el is assigned).
 
 1. While in *SessionView*, define the *share* event handler as follows:
 
