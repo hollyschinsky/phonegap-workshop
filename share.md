@@ -4,8 +4,6 @@ title: Module 12&#58; Add Native Share Feature
 ---
 In this section, we add the ability to share the session details through the device's native sharing options. 
 
-> The code below works when running the application as a PhoneGap app on your device. It should also work in Chrome on the desktop when the page is served with the http:// protocol, and in Firefox, regardless of the protocol (http:// or file://).
-
 
 ## Steps
 
