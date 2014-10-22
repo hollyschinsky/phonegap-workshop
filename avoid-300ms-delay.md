@@ -3,7 +3,7 @@ layout: module
 title: Module 6&#58; Avoiding the 300ms Click Delay
 ---
 ##Steps
-1. Test the application on your iOS device or in the iOS emulator: Tap the Help button, and notice the delay before the dialog appears.
+1. Test the application on your iOS device or in the iOS emulator (this will **not** work on the browser). Tap the Help button, and notice the delay before the dialog appears.
   
     >This delay occurs because the operating system is waiting roughly 300ms to see if the user is going to tap the target again (and therefore perform a double-tap).
 
@@ -22,7 +22,7 @@ title: Module 6&#58; Avoiding the 300ms Click Delay
     FastClick.attach(document.body);
     ```
 
-4. Test the application: Click the Help button. The message should now appear without delay.
+4. Test the application by clicking the help button. The message should now appear without delay.
 
 
 <div class="row" style="margin-top:40px;">
