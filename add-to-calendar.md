@@ -3,8 +3,7 @@ layout: module
 title: Module 12&#58; Add to Calendar Native Feature
 ---
 In this section, we add the ability to add a session to the native calendar on the device.
-
-## Steps
+### Steps
 
 1. Add this calendar plugin to your project:
 
