@@ -9,18 +9,18 @@ title: Module 6&#58; Avoiding the 300ms Click Delay
 
 2. In index.html, add the following script tag:
 
-  ```
-  <script src="lib/fastclick.js"></script>
-  ```
+    ```
+    <script src="lib/fastclick.js"></script>
+    ```
 
   > FastClick is an open source library built by the Financial Times. More information [here](https://github
   .com/ftlabs/fastclick).
 
 3. In app.js, register FastClick inside the *deviceready* event handler.
 
-  ```
-  FastClick.attach(document.body);
-  ```
+    ```
+    FastClick.attach(document.body);
+    ```
 
 4. Test the application: Click the Help button. The message should now appear without delay.
 
