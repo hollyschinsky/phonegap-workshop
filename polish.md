@@ -1,6 +1,6 @@
 ---
 layout: module
-title: Module 1&#58; Styling, Status Bar, Icons and Configuration Tips
+title: Module 1&#58; Adding Polish | Configuration Tips
 ---
 This module is going to take you through a couple steps to polish the application a bit more. 
 
@@ -66,14 +66,17 @@ There are two options for fixing this issue, via configuration or programmatical
     StatusBar.styleLightContent();
     ```
 
-2. Now build the application again and test again to see the results:
+
+2. Now build the application again and test to see the results:
 
 ![](images/statusbar2.png)
     
     
 ###Keyboard Accessory Bar 
 
-To suppress the accessory keyboard that pops up with the **Done** button on it, we can  
+![](images/keyboard1.png)
+
+To suppress the accessory keyboard that pops up with the **Done** button on it in the above screenshot, we can  
 use a custom plugin from the Ionic Framework and then use a method to hide it:
 
 
@@ -90,20 +93,24 @@ use a custom plugin from the Ionic Framework and then use a method to hide it:
         cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
 ```            
 
-3. Now build the application again and test again to see the result.
+3. Now build the application again and test to see the result.
 
-###Turn off WebView Bounce Effect
+![](images/keyboard2.png)
 
-You may notice if you pull down on your app that you will see a bounce effect and black at the top for iOS. You can disable this effect
-by setting a property in the config.xml file. 
+###Turn off WebView Bounce / Overscroll Effect
 
+![](images/overscroll.png)
+
+You may notice if you pull down on your app from the header bar, you will see a black space between it and the statusbar and a bounce effect on iOS as shown above. 
+
+You can disable this effect by setting a property in the config.xml file. 
 1. In the root project config.xml, add the following property to the end of the preferences:
 
 ```
 <preference name="DisallowOverscroll" value="true" />
 ```
 
-2. Now build the application again and test again to see the result. 
+2. Now build the application again and test to make sure you no longer see this behavior and the webview stays in place. 
 
 ###Set a default application icon
 
