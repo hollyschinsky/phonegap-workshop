@@ -7,24 +7,24 @@ This module is going to take you through a couple steps to polish the applicatio
 ####Styling
 1. Open the assets/css/styles.css and add the following to the bottom to style the header bar, search bar and icons:
 
-```
-.media>p {
-    color: #444;
-}
-.bar-nav {
-    background-color: #209dc2;
-    color: #ffffff;
-}
-.title {
-    color: #ffffff;
-}
-.bar-nav .icon {
-    color: #ffffff;
-}
-.bar-header-secondary {
-    background-color: #eeeeee;
-}
-```
+        ```
+        .media>p {
+            color: #444;
+        }
+        .bar-nav {
+            background-color: #209dc2;
+            color: #ffffff;
+        }
+        .title {
+            color: #ffffff;
+        }
+        .bar-nav .icon {
+            color: #ffffff;
+        }
+        .bar-header-secondary {
+            background-color: #eeeeee;
+        }
+        ```
 
 1. Test the application
 
@@ -119,9 +119,9 @@ You may want to set a default application icon to be used for all the icons in y
 
 1. In the root project's config.xml, add the following property to point to the icon *phonegap_wings.png* from the initial project download. 
 
-```
-    <icon src="phonegap_wings.png" />
-```
+        ```
+        <icon src="phonegap_wings.png" />
+        ```
 Note that this path is relative to the project root. 
 
 2. Now build and run the application again. If you go to the home screen (shift+cmd+h from simulator), you will see the icon is now displayed as wings. You can see that it's also set for the spotlight search.
