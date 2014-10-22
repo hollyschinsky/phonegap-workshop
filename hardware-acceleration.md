@@ -38,11 +38,11 @@ Modify **app.js** as follows:
     slider.slidePage(new HomeView(service).render().$el);
     ```
 
-  and
-
     ```
     slider.slidePage(new SessionView(session).render().$el);
     ```
+
+    
 
 3. Now test your application and you should see the pages slide in left and right when you go between them. 
 
