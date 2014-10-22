@@ -27,9 +27,9 @@ In this section, we add the ability to share the session details through the dev
 
 1. In the **initialize()** function of *SessionView*, register an event listener for the click event of the *share* tab.
 
-  ```
-  this.$el.on('click', '.shareBtn', this.share);
-  ```
+    ```
+    this.$el.on('click', '.shareBtn', this.share);
+    ```
 
     > Make sure you add this line as the last line of the **initialize()** function (after this.$el is assigned).
 
