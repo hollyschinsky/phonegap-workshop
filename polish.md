@@ -5,7 +5,7 @@ title: Module 1&#58; Styling, Status Bar, Icons and Configuration Tips
 This module is going to take you through a couple steps to polish the application a bit more. 
 
 ###Styling
-1. Open the styles.css and add the following to the bottom to style the header bar and icons:
+1. Open the assets/css/styles.css and add the following to the bottom to style the header bar, search bar and icons:
 
 ```
 .media>p {
@@ -30,11 +30,9 @@ This module is going to take you through a couple steps to polish the applicatio
 
     ![](images/statusbar1.png)
 
-#### It looks better, but you may notice the status bar header seems to overlap the space where the application header resides. The next step will address this.
+* It looks better, but you may notice the status bar header seems to overlap the space where the application header resides. The next step will address this.
 
 ###Status Bar Handling
-
-![](images/statusbar1.png)
 
 In iOS7, the status bar overlaps the application views. As a result, the status bar text may collide with the 
 application's header text as shown in the screenshot above. You can fix this issue using the [statusbar plugin](https://github.com/apache/cordova-plugin-statusbar). 
@@ -49,8 +47,7 @@ There are two options for fixing this issue, via configuration or programmatical
 
 1. Configuration (config.xml):
    
-   For this particular application, we're going to go through the exercise of changing it using the config.xml so the status bar is no longer
-   overlaying the content. We'll also set the text and icons to white and the background color to match the header we currently have.   
+   Setting overlay to false will move our app content below the status bar. We're also setting the status bar background style and text/icons to match the app:   
    
    Open the config.xml file and add the following lines to the end of the preferences:
    
@@ -58,8 +55,7 @@ There are two options for fixing this issue, via configuration or programmatical
    <preference name="StatusBarOverlaysWebView" value="false" />
    <preference name="StatusBarBackgroundColor" value="#209dc2"/>
    <preference name="StatusBarStyle" value="lightcontent" />
-       
-    ```
+    ```     
 
 1.Programatically:
   In app.js, add the following code at the top of the **deviceready** handler:
@@ -70,9 +66,9 @@ There are two options for fixing this issue, via configuration or programmatical
     StatusBar.styleLightContent();
     ```
 
-Now build the application again and test your application in the iOS emulator or on an iOS device.
+2. Now build the application again and test again to see the results:
 
-![](images/statusbar1.png)
+![](images/statusbar2.png)
     
     
 ###Keyboard Accessory Bar 
@@ -81,7 +77,7 @@ To suppress the accessory keyboard that pops up with the **Done** button on it, 
 use a custom plugin from the Ionic Framework and then use a method to hide it:
 
 
-1. Add the Ionic Keyboard Plugin:
+1. Add the [Ionic Keyboard Plugin](https://github.com/driftyco/ionic-plugins-keyboard):
 
   ```  
   phonegap plugin add https://github.com/driftyco/ionic-plugins-keyboard
@@ -94,3 +90,29 @@ use a custom plugin from the Ionic Framework and then use a method to hide it:
         cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
 ```            
 
+3. Now build the application again and test again to see the result.
+
+###Turn off WebView Bounce Effect
+
+You may notice if you pull down on your app that you will see a bounce effect and black at the top for iOS. You can disable this effect
+by setting a property in the config.xml file. 
+
+1. In the root project config.xml, add the following property to the end of the preferences:
+
+```
+<preference name="DisallowOverscroll" value="true" />
+```
+
+2. Now build the application again and test again to see the result. 
+
+###Set a default application icon
+
+You may want to set a default application icon to be used for all the icons in your application. 
+
+1. In the root project config.xml, add the following property to point to the icon *phonegap_wings.png* from the initial project download. 
+
+```
+    <icon src="phonegap_wings.png" />
+```
+Note that this path is relative to the project root. There's a lot more involved with setting icons and splash screens than
+ what we'll go into here, but please see [this article](http://devgirl.org/2014/09/29/new-icons-and-splash-screen-help-for-cordovaphonegap/) for more details.
