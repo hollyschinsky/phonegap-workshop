@@ -25,7 +25,6 @@ This module is going to take you through a couple steps to polish the applicatio
             background-color: #eeeeee;
         }
         ```
-
 1. Test the application
 
     ![](images/statusbar1.png)
