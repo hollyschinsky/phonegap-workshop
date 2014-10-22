@@ -3,9 +3,9 @@ phonegap-workshop
 
 A sample conference application to manage sessions and speakers built with PhoneGap.
 
-#### See the phonegap workshop tutorial located at http://hollyschinsky.github.io/phonegap-workshop/ for a detailed walkthru.
+> See the phonegap workshop tutorial located at http://hollyschinsky.github.io/phonegap-workshop/ for a detailed walkthru.
 
->Note: The final version of this app uses the following plugins:
+**Note: The final version of this app uses the following plugins:**
 
 1. org.apache.cordova.console 0.2.11 "Console"
 2. org.apache.cordova.device 0.2.12 "Device"
