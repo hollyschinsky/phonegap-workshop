@@ -45,9 +45,9 @@ application's header text as shown in the screenshot above. You can fix this iss
 
 2. There are two options for fixing this issue, via configuration or programmatically. Choose to implement one of the options below:
 
-    -Configuration (config.xml):
+    **Configuration (config.xml)**:
    
-        Setting overlay to false will move our app content below the status bar. We're also setting the status bar background style and text/icons to match the app:   
+    Setting overlay to false will move our app content below the status bar. We're also setting the status bar background style and text/icons to match the app:   
    
         Open the config.xml file and add the following lines to the end of the preferences:
   
@@ -57,7 +57,7 @@ application's header text as shown in the screenshot above. You can fix this iss
            <preference name="StatusBarStyle" value="lightcontent" />
         ```    
 
-    -Programatically:
+    **Programatically**:
       In app.js, add the following code at the top of the **deviceready** handler:
     
     ```    
