@@ -9,16 +9,17 @@ It's time to provide the application with some structure. If we keep adding all 
 
 1. Create a file named HomeView.js in the js directory, and define a **HomeView** constructor implemented as follows:
 
-    ```javascript
+
+    ```
     var HomeView = function (service) {
     
     }
     ```
 
-
-   > The constructor function takes the conference data service as an argument
+    >The constructor function takes the conference data service as an argument
 
 2. **HomeView** uses a nested view to display the list of sessions. Defining the list of sessions as a separate view makes it reusable in other contexts. We will define SessionListView in Step 2 below. For now, define a local variable to keep track of the nested view.
+
 
     ```    
     var HomeView = function (service) {
