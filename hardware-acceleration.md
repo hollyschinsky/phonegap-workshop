@@ -5,11 +5,11 @@ title: Module 11&#58; Using Hardware Acceleration
 In this module, you add hardware accelerated page transitions when the user navigates between the list and details 
 views. 
 
-####Steps
+###Steps
 
-Modify index.html as follows:
+Modify **index.html** as follows:
 
-1. Add pageslider.css (or pageslider-fix.css for iOS8 users) inside the head tag in index.html:
+1. Add pageslider.css (or *pageslider-fix.css* for iOS8 users) inside the head tag in index.html:
 
     ```
     <link href="assets/css/pageslider.css" rel="stylesheet">
@@ -24,19 +24,18 @@ Modify index.html as follows:
     >PageSlider is a micro library hosted by Christophe Coenraets on GitHub <a href="https://github.com/ccoenraets/PageSlider">here</a>.
 
 
-Modify app.js as follows:
+Modify **app.js** as follows:
 
 1. In the Local Variables section, declare an instance of the PageSlider object as follows:
 
-  ```
-  var slider = new PageSlider($('body'));
-  ```
+    ```
+    var slider = new PageSlider($('body'));
+    ```
 
 2. In the routes, replace the calls to $('body').html() with calls to slider.slidePage() passing the same argument to the function.
 
     ```
     slider.slidePage(new HomeView(service).render().$el);
-    
     ```
 
   and
