@@ -2,7 +2,7 @@
 layout: module
 title: Module 1&#58; Adding Polish | Configuration Tips
 ---
-This module is going to take you through a couple steps to polish the application a bit more. 
+This module is going to take you through a couple steps to polish the application and give you some tips on configuration settings to be aware of. 
 
 ###Styling
 1. Open the assets/css/styles.css and add the following to the bottom to style the header bar, search bar and icons:
@@ -49,24 +49,23 @@ In either case, set the *overlay* setting to false to move our app content below
    
 Choose to implement **ONE** of the options below:
 
-**Configuration (config.xml)**:
-Open the config.xml file and add the following lines to the end of the preferences:
+**Configuration (config.xml)**
+    Open the config.xml file and add the following lines to the end of the preferences:
   
-        ```      
+         
            <preference name="StatusBarOverlaysWebView" value="false" />
            <preference name="StatusBarBackgroundColor" value="#209dc2"/>
            <preference name="StatusBarStyle" value="lightcontent" />
-        ```    
+            
 
-**Programatically**:
-Open app.js and add the following code at the top of the **deviceready** handler:
+**Programatically**
+    Open app.js and add the following code at the top of the **deviceready** handler:
     
-    ```    
+      
         StatusBar.overlaysWebView( false );
         StatusBar.backgroundColorByHexString('#209dc2');
         StatusBar.styleLightContent();
-    ```    
-
+    
 
 3. Now build and run the application again to see the results:
 
