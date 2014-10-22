@@ -27,7 +27,7 @@
     <preference name="DisallowOverscroll" value="true" />
 
     <!-- Configuring App Icons - path is relative to the root-->
-    <!-- See this link for details http://devgirl.org/2014/09/29/new-icons-and-splash-screen-help-for-cordovaphonegap/-->
+    <!-- See this link for details http://devgirl.org/2014/09/29/new-icons-and-splash-screen-help-for-cordovaphonegap/ -->
     <icon src="phonegap_wings.png" />
 
 
