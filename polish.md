@@ -26,7 +26,7 @@ This module is going to take you through a couple steps to polish the applicatio
 }
 ```
 
-1. Test the application.
+1. Test the application
 
     ![](images/statusbar1.png)
 
@@ -57,7 +57,7 @@ There are two options for fixing this issue, via configuration or programmatical
    <preference name="StatusBarStyle" value="lightcontent" />
     ```     
 
-1.Programatically:
+2.Programatically:
   In app.js, add the following code at the top of the **deviceready** handler:
 
     ```
@@ -67,17 +67,17 @@ There are two options for fixing this issue, via configuration or programmatical
     ```
 
 
-2. Now build the application again and test to see the results:
+2. Now build and run the application again to see the results:
 
 ![](images/statusbar2.png)
     
     
 ###Keyboard Accessory Bar 
 
+We can suppress the accessory keyboard that pops up with the **Done** button on it as shown in this screenshot by using a custom plugin from the Ionic Framework and then use a method to hide it:
+
 ![](images/keyboard1.png)
 
-To suppress the accessory keyboard that pops up with the **Done** button on it in the above screenshot, we can  
-use a custom plugin from the Ionic Framework and then use a method to hide it:
 
 
 1. Add the [Ionic Keyboard Plugin](https://github.com/driftyco/ionic-plugins-keyboard):
@@ -110,16 +110,18 @@ You can disable this effect by setting a property in the config.xml file.
 <preference name="DisallowOverscroll" value="true" />
 ```
 
-2. Now build the application again and test to make sure you no longer see this behavior and the webview stays in place. 
+2. Now build and run the application again and the webview should stay in place. 
 
 ###Set a default application icon
 
 You may want to set a default application icon to be used for all the icons in your application. 
 
-1. In the root project config.xml, add the following property to point to the icon *phonegap_wings.png* from the initial project download. 
+1. In the root project's config.xml, add the following property to point to the icon *phonegap_wings.png* from the initial project download. 
 
 ```
     <icon src="phonegap_wings.png" />
 ```
 Note that this path is relative to the project root. There's a lot more involved with setting icons and splash screens than
  what we'll go into here, but please see [this article](http://devgirl.org/2014/09/29/new-icons-and-splash-screen-help-for-cordovaphonegap/) for more details.
+ 
+ ![](images/icon-disp1.png) ![](images/icon-display2.png)
