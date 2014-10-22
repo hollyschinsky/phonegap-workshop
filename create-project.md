@@ -22,9 +22,9 @@ title: Module 1&#58; Creating a PhoneGap Project
 
 4. Using the PhoneGap CLI, create a PhoneGap project named **Workshop** in a directory named **workshop**:
 
-```        
-phonegap create workshop com.yourname.workshop Workshop
-```        
+    ```        
+    phonegap create workshop com.yourname.workshop Workshop
+    ```        
 
 5. Navigate into the project directory:
 
