@@ -12,7 +12,7 @@ In this section, we add the ability to add a session to the native calendar on t
 1. Add this calendar plugin to your project:
 
   ```
-  $ phonegap local plugin add https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin.git
+  $ phonegap plugin add https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin.git
 
   ```
 
