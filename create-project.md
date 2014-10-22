@@ -4,9 +4,9 @@ title: Module 1&#58; Creating a PhoneGap Project
 ---
 ## Steps
 
-Make sure you have an up-to-date version of [Node.js](http://nodejs.org/) installed on your system.
+1. Make sure you have an up-to-date version of [Node.js](http://nodejs.org/) installed on your system.
 
-If you already have PhoneGap installed on your computer, make sure you upgrade to the latest version:
+2. If you already have PhoneGap installed on your computer, make sure you upgrade to the latest version:
 
   ````
   npm update -g phonegap
@@ -18,21 +18,21 @@ If you already have PhoneGap installed on your computer, make sure you upgrade t
   sudo npm update -g phonegap
   ````
 
-1. Navigate (cd) to a directory where you store projects on your file system.
+3. Navigate (cd) to a directory where you store projects on your file system.
 
-2. Using the PhoneGap CLI, create a PhoneGap project named **Workshop** in a directory named **workshop**:
+4. Using the PhoneGap CLI, create a PhoneGap project named **Workshop** in a directory named **workshop**:
 
     ```
      phonegap create workshop com.yourname.workshop Workshop
     ```
 
-3. Navigate into the project directory:
+5. Navigate into the project directory:
 
     ```
     cd workshop
     ```
 
-4. Add support for the iOS platform (optional)
+6. Add support for the iOS platform (optional)
 
     > To be able to build for the iOS platform, the iOS SDK must be installed on your system. If it's not, 
     you can skip this step and add support for another platform, or simply run the tutorial application in your 
@@ -45,7 +45,7 @@ If you already have PhoneGap installed on your computer, make sure you upgrade t
         phonegap platforms add ios
         ```
         
-5. Add support for the Android platform (optional)
+7. Add support for the Android platform (optional)
 
     > To be able to build for the Android platform, the Android SDK must be installed on your system. If it's not, 
     you can skip this step and add support for another platform, or simply run the tutorial application in your browser.
@@ -57,7 +57,7 @@ If you already have PhoneGap installed on your computer, make sure you upgrade t
         phonegap platforms add android
         ```
 
-1. Make sure you are in the **workshop** directory, and add these basic plugins to your projects:
+8. Make sure you are in the **workshop** directory, and add these basic plugins to your projects:
 
       ```
       phonegap plugin add org.apache.cordova.console
@@ -65,10 +65,10 @@ If you already have PhoneGap installed on your computer, make sure you upgrade t
     
       ```
   
-  * The console plugin is needed to see any console messages you might be writing in your app (*console.log("XYZ")*).  
-  * The device plugin allows you to access device specific information so you can detect platform (iOS, android etc), version etc. 
+> The [console plugin](https://github.com/apache/cordova-plugin-console) is needed to see any console messages you might be writing in your app (console.log("My value is " + val)).  
+The [device plugin](https://github.com/apache/cordova-plugin-device) allows you to access device specific information so you can detect platform (iOS, android etc), version etc. 
   
-1. Examine the directory structure under workshop.
+9. Examine the directory structure under workshop.
     - The **www** folder is where you will code your HTML / JavaScript application. Open the index.html file in a 
     browser to see the default application created by the PhoneGap CLI.
     - The **platforms** folder is where PhoneGap will build your application for different platforms (iOS, Android, 
