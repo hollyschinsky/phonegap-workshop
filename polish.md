@@ -30,7 +30,7 @@ This module is going to take you through a couple steps to polish the applicatio
 
     ![](images/statusbar1.png)
 
-* It looks better, but you may notice the status bar header seems to overlap the space where the application header resides. The next step will address this.
+> It looks better, but you may notice the status bar header seems to overlap the space where the application header resides. The next step will address this.
 
 ####Status Bar Handling
 
@@ -128,6 +128,6 @@ Note that this path is relative to the project root.
 
 ![](images/icon-disp1.png) ![](images/icon-display2.png)
 
-* There's a lot more you could do with setting icons and splash screens than what is shown here. See [this article](http://devgirl.org/2014/09/29/new-icons-and-splash-screen-help-for-cordovaphonegap/) for more details.
+> There's a lot more you could do with setting icons and splash screens than what is shown here. See [this article](http://devgirl.org/2014/09/29/new-icons-and-splash-screen-help-for-cordovaphonegap/) for more details.
  
  
