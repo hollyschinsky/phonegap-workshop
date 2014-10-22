@@ -87,7 +87,7 @@ We can suppress the accessory keyboard that pops up with the **Done** button on 
   phonegap plugin add https://github.com/driftyco/ionic-plugins-keyboard
   ```
   
-2.  In app.js, add the following code at the top of the **deviceready** handler:
+2. In app.js, add the following code at the top of the **deviceready** handler:
 
 ```
     if (cordova.plugins.Keyboard)
@@ -103,8 +103,8 @@ You may notice if you pull down on your app from the header bar, you will see a 
 
 ![](images/overscroll.png)
 
-
 You can disable this effect by setting a property in the config.xml file. 
+
 1. In the root project config.xml, add the following property to the end of the preferences:
 
 ```
