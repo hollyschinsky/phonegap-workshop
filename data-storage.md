@@ -6,26 +6,28 @@ title: Module 4&#58; Choosing a Data Storage Strategy
 
 Open the following files and explore the different persistence services:
 
-1. www/js/services/memory/ConferenceService.js
+1. **www/js/services/memory/ConferenceService.js**
 
-1. www/js/services/json/ConferenceService.js
+1. **www/js/services/json/ConferenceService.js**
 
-1. www/js/services/localstorage/ConferenceService.js
+1. **www/js/services/localstorage/ConferenceService.js**
 
-1. www/js/services/websql/ConferenceService.js
+1. **www/js/services/websql/ConferenceService.js**
 
 
 ## Step 2: Test the application with different persistence mechanisms
 
+####In-Memory
 The application is initially configured to work with the in-memory datastore. To change the local persistence mechanism for the application:
 
 1. In **index.html**: instead of js/services/memory/ConferenceService.js, import the .js file for the service  of your choice, for example: js/services/websql/ConferenceService.js.
 
 2. Test the application.
 
+####JSON Service
 To test the JSON service, make sure the Node.js server provided as part of the materials is running:
 
-1. Open a terminal or command window, and navigate to the server directory under phonegap-workshop
+1. Open a terminal or command window, and navigate to the *server* directory under the [phonegap-workshop](https://github.com/hollyschinsky/phonegap-workshop/tree/master/server) project you downloaded.
 
 2. Install the server dependencies:
 
@@ -52,10 +54,9 @@ To test the JSON service, make sure the Node.js server provided as part of the m
   you could also deploy the service on a publicly available server. In a real-life application, 
   you would typically externalize the host name in some sort of configuration file.
   
-  
-  All the other data storage services provided in www/js/services work out-of-the-box when running the application in
-   the browser and 
-  on device. 
+####Other  
+All other data storage services provided in www/js/services work out-of-the-box when running the application in
+the browser and on device. 
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">

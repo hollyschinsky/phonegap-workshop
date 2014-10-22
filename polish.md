@@ -110,14 +110,13 @@ You can disable this effect by setting a property in the config.xml file.
         <preference name="DisallowOverscroll" value="true" />
 
 
-2. Now build and run the application again and the webview should stay in place. 
+2. Now build and run the application again and the webview (your app) should stay in place. 
 
 ####Set a default application icon
 
 You may want to set a default application icon to be used for all the icons in your application. 
 
-1. In the root project's config.xml, add the following property to point to the icon *phonegap_wings.png* from the initial project download. Note that this path is relative to the project root. 
-
+1. In the root project's config.xml, add the following property to point to the icon *phonegap_wings.png*. (You can copy this file into your root from the [initial project download](https://github.com/hollyschinsky/phonegap-workshop)).  
         
         <icon src="phonegap_wings.png" />
         
@@ -125,6 +124,6 @@ You may want to set a default application icon to be used for all the icons in y
 
 ![](images/icon-disp1.png) ![](images/icon-display2.png)
 
-> There's a lot more you could do with setting icons and splash screens than what is shown here. See [this article](http://devgirl.org/2014/09/29/new-icons-and-splash-screen-help-for-cordovaphonegap/) for more details.
+> There's a lot more you can do with setting icons and splash screens than what is shown here. See [this article](http://devgirl.org/2014/09/29/new-icons-and-splash-screen-help-for-cordovaphonegap/) for more details.
  
  
