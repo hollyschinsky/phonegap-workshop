@@ -49,7 +49,7 @@ In either case, set the *overlay* setting to false to move our app content below
    
 Choose to implement **ONE** of the options below:
 
-1. **Configuration (config.xml)**
+- **Configuration (config.xml)**
     Open the config.xml file and add the following lines to the end of the preferences:
   
          
@@ -58,7 +58,7 @@ Choose to implement **ONE** of the options below:
         <preference name="StatusBarStyle" value="lightcontent" />
             
 
-2. **Programatically**
+- **Programatically**
     Open app.js and add the following code at the top of the **deviceready** handler:
     
       
