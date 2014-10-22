@@ -116,14 +116,12 @@ You can disable this effect by setting a property in the config.xml file.
 
 You may want to set a default application icon to be used for all the icons in your application. 
 
-1. In the root project's config.xml, add the following property to point to the icon *phonegap_wings.png* from the initial project download. 
+1. In the root project's config.xml, add the following property to point to the icon *phonegap_wings.png* from the initial project download. Note that this path is relative to the project root. 
 
         
         <icon src="phonegap_wings.png" />
         
-Note that this path is relative to the project root. 
-
-2. Now build and run the application again. If you go to the home screen (shift+cmd+h from simulator), you will see the icon is now displayed as wings. You can see that it's also set for the spotlight search.
+2. Now build and run the application again. If you go to the home screen (**shift+cmd+h** from simulator), you will see the icon is now displayed as wings. You can see that it's also set for the spotlight search.
 
 ![](images/icon-disp1.png) ![](images/icon-display2.png)
 

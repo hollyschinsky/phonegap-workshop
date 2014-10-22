@@ -8,65 +8,59 @@ title: Module 1&#58; Creating a PhoneGap Project
 
 2. If you already have PhoneGap installed on your computer, make sure you upgrade to the latest version:
 
-  ````
-  npm update -g phonegap
-  ````
-
+      
+        npm update -g phonegap
+      
   or
 
-  ````
-  sudo npm update -g phonegap
-  ````
-
+        sudo npm update -g phonegap
+      
 3. Navigate (cd) to a directory where you store projects on your file system.
 
 4. Using the PhoneGap CLI, create a PhoneGap project named **Workshop** in a directory named **workshop**:
 
-    ```
-     phonegap create workshop com.yourname.workshop Workshop
-    ```
+        
+         phonegap create workshop com.yourname.workshop Workshop
+        
 
 5. Navigate into the project directory:
 
-    ```
-    cd workshop
-    ```
+        cd workshop        
 
 6. Add support for the iOS platform (optional)
 
-    > To be able to build for the iOS platform, the iOS SDK must be installed on your system. If it's not, 
-    you can skip this step and add support for another platform, or simply run the tutorial application in your 
-    browser.
-    1. Make sure the iOS SDK is available on your system.
-    2. On the command line, make sure you are in the **workshop** directory and type: 
+> To be able to build for the iOS platform, the iOS SDK must be installed on your system. If it's not, 
+you can skip this step and add support for another platform, or simply run the tutorial application in your 
+browser.
+1. Make sure the iOS SDK is available on your system.
+2. On the command line, make sure you are in the **workshop** directory and type: 
                                     
                                 
-        ```
+        
         phonegap platforms add ios
-        ```
+        
         
 7. Add support for the Android platform (optional)
 
-    > To be able to build for the Android platform, the Android SDK must be installed on your system. If it's not, 
-    you can skip this step and add support for another platform, or simply run the tutorial application in your browser.
-    1. Make sure the Android SDK and the ant build tool are available on your system. The Android SDK is available 
-    [here](http://developer.android.com/sdk). Both the **android** and **ant** tools must be available in your path.
-    2. On the command line, make sure you are in the **workshop** directory and type:
+> To be able to build for the Android platform, the Android SDK must be installed on your system. If it's not, 
+you can skip this step and add support for another platform, or simply run the tutorial application in your browser.
+1. Make sure the Android SDK and the ant build tool are available on your system. The Android SDK is available 
+[here](http://developer.android.com/sdk). Both the **android** and **ant** tools must be available in your path.
+2. On the command line, make sure you are in the **workshop** directory and type:
 
-        ```
+        
         phonegap platforms add android
-        ```
+        
 
 8. Make sure you are in the **workshop** directory, and add these basic plugins to your projects:
 
-      ```
-      phonegap plugin add org.apache.cordova.console
-      phonegap plugin add org.apache.cordova.device
-    
-      ```
-  
+          
+          phonegap plugin add org.apache.cordova.console
+          phonegap plugin add org.apache.cordova.device
+        
+        
 > The [console plugin](https://github.com/apache/cordova-plugin-console) is needed to see any console messages you might be writing in your app (console.log("My value is " + val)).  
-The [device plugin](https://github.com/apache/cordova-plugin-device) allows you to access device specific information so you can detect platform (iOS, android etc), version etc. 
+> The [device plugin](https://github.com/apache/cordova-plugin-device) allows you to access device specific information so you can detect platform (iOS, android etc), version etc. 
   
 9. Examine the directory structure under workshop.
     - The **www** folder is where you will code your HTML / JavaScript application. Open the index.html file in a 
