@@ -55,6 +55,7 @@ title: Module 1&#58; Creating a PhoneGap Project
     ```
     phonegap platforms add android
     ```   
+    
          
     > To be able to build for the Android platform, the Android SDK must be installed on your system. If it's not, 
     you can skip this step and add support for another platform, or simply run the tutorial application in your browser.
@@ -66,8 +67,9 @@ title: Module 1&#58; Creating a PhoneGap Project
     phonegap plugin add org.apache.cordova.device
     ```        
         
-> The [console plugin](https://github.com/apache/cordova-plugin-console) is needed to see any console messages you might be writing in your app (console.log("My value is " + val)).  
-> The [device plugin](https://github.com/apache/cordova-plugin-device) allows you to access device specific information so you can detect platform (iOS, android etc), version etc. 
+    > The [console plugin](https://github.com/apache/cordova-plugin-console) is needed to see any console messages you might be writing in your app (console.log("My value is " + val)).  
+    
+    > The [device plugin](https://github.com/apache/cordova-plugin-device) allows you to access device specific information so you can detect platform (iOS, android etc), version etc. 
   
 9. Examine the directory structure under workshop.
     - The **www** folder is where you will code your HTML / JavaScript application. Open the index.html file in a 
