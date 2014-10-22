@@ -4,7 +4,7 @@ title: Module 1&#58; Adding Polish | Configuration Tips
 ---
 This module is going to take you through a couple steps to polish the application and give you some tips on configuration settings to be aware of. 
 
-####Styling
+###Styling
 1. Open the assets/css/styles.css and add the following to the bottom to style the header bar, search bar and icons:
 
         
@@ -31,7 +31,7 @@ This module is going to take you through a couple steps to polish the applicatio
 
 > It looks better, but you may notice the status bar header seems to overlap the space where the application header resides. The next step will address this.
 
-####Status Bar Handling
+###Status Bar Handling
 
 In iOS7, the status bar overlaps the application views. As a result, the status bar text may collide with the 
 application's header text as shown in the screenshot above. You can fix this issue using the [statusbar plugin](https://github.com/apache/cordova-plugin-statusbar). 
@@ -72,7 +72,7 @@ Now build and run the application again to see the results:
     
   
     
-####Keyboard Accessory Bar 
+###Keyboard Accessory Bar 
 
 We can suppress the accessory keyboard that pops up with the **Done** button on it as shown in this screenshot by using a custom plugin from the Ionic Framework and then use a method to hide it:
 
@@ -97,7 +97,7 @@ We can suppress the accessory keyboard that pops up with the **Done** button on 
 
 ![](images/keyboard2.png)
 
-####Turn off WebView Bounce / Overscroll Effect
+###Turn off WebView Bounce / Overscroll Effect
 You may notice if you pull down on your app from the header bar, you will see a black space between it and the statusbar and a bounce effect on iOS as shown below. 
 
 ![](images/overscroll.png)
@@ -112,7 +112,7 @@ You can disable this effect by setting a property in the config.xml file.
 
 2. Now build and run the application again and the webview (your app) should stay in place. 
 
-####Set a default application icon
+###Set a default application icon
 
 You may want to set a default application icon to be used for all the icons in your application. 
 
