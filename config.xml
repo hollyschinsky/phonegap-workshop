@@ -25,7 +25,7 @@
      -->
     <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="StatusBarBackgroundColor" value="#209dc2"/><!-- only applies works when status bar overlay false -->
-    <preference name="StatusBarStyle" value="lightcontent" />
+    <preference name="StatusBarStyle" value="lightcontent" /><!-- light text/icons -->
 
     <!--<preference name="StatusBarStyle" value="lightcontent" /><!- light text/icons -->
     <!--<preference name="StatusBarStyle" value="default" /><!- black text/icons -->
