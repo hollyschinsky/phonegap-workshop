@@ -57,7 +57,7 @@ In this section, we add the ability to add a session to the native calendar on t
                     console.log("Calendar fail " + error);
                 });
         }
-        else alert("Unsupported: You must be running on a device to use this feature.");
+        else console.log("Calendar plugin not found");
     }
     ```
 

@@ -47,7 +47,7 @@ In this section, we add the ability to share the session details through the dev
                   console.log("Share fail " + error)
               });
       }
-      else alert("Unsupported: You must be running on a device to use this feature.");
+      else console.log("Share plugin not found");
     }
     ```
 
