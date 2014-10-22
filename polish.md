@@ -59,15 +59,15 @@ Choose to implement **ONE** of the options below:
             
 
 - **Programatically**
-    Open app.js and add the following code at the top of the **deviceready** handler:
-    
-      
-        StatusBar.overlaysWebView( false );
-        StatusBar.backgroundColorByHexString('#209dc2');
-        StatusBar.styleLightContent();
-    
+        Open app.js and add the following code at the top of the **deviceready** handler:
+        
+          
+            StatusBar.overlaysWebView( false );
+            StatusBar.backgroundColorByHexString('#209dc2');
+            StatusBar.styleLightContent();
+        
 
-3. Now build and run the application again to see the results:
+Now build and run the application again to see the results:
 
 ![](images/statusbar2.png)
     
