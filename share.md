@@ -3,9 +3,7 @@ layout: module
 title: Module 12&#58; Add Native Share Feature
 ---
 In this section, we add the ability to share the session details through the device's native sharing options. 
-
-
-## Steps
+### Steps
 
 1. Add the social sharing plugin to your project:
 
