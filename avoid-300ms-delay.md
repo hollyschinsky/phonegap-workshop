@@ -13,7 +13,7 @@ title: Module 6&#58; Avoiding the 300ms Click Delay
     <script src="lib/fastclick.js"></script>
     ```
 
-  > FastClick is an open source library built by the Financial Times. More information [here](https://github
+    >FastClick is an open source library built by the Financial Times. More information [here](https://github
   .com/ftlabs/fastclick).
 
 3. In app.js, register FastClick inside the *deviceready* event handler.
