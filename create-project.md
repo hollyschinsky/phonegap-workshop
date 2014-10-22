@@ -8,15 +8,15 @@ title: Module 1&#58; Creating a PhoneGap Project
 
 2. If you already have PhoneGap installed on your computer, make sure you upgrade to the latest version:
 
-```      
-npm update -g phonegap
-```
+    ```      
+    npm update -g phonegap
+    ```
+          
+      or
       
-  or
-  
-```
-sudo npm update -g phonegap
-```
+    ```
+    sudo npm update -g phonegap
+    ```
       
 3. Navigate (cd) to a directory where you store projects on your file system.
 
