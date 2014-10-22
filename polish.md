@@ -43,28 +43,28 @@ application's header text as shown in the screenshot above. You can fix this iss
     phonegap plugins add org.apache.cordova.statusbar
     ```
 
-There are two options for fixing this issue, via configuration or programmatically. Choose to implement one of the options below:
+2. There are two options for fixing this issue, via configuration or programmatically. Choose to implement one of the options below:
 
-1. Configuration (config.xml):
+    -Configuration (config.xml):
    
-   Setting overlay to false will move our app content below the status bar. We're also setting the status bar background style and text/icons to match the app:   
+        Setting overlay to false will move our app content below the status bar. We're also setting the status bar background style and text/icons to match the app:   
    
-   Open the config.xml file and add the following lines to the end of the preferences:
+        Open the config.xml file and add the following lines to the end of the preferences:
   
-```      
-   <preference name="StatusBarOverlaysWebView" value="false" />
-   <preference name="StatusBarBackgroundColor" value="#209dc2"/>
-   <preference name="StatusBarStyle" value="lightcontent" />
-```    
+        ```      
+           <preference name="StatusBarOverlaysWebView" value="false" />
+           <preference name="StatusBarBackgroundColor" value="#209dc2"/>
+           <preference name="StatusBarStyle" value="lightcontent" />
+        ```    
 
-2.Programatically:
-  In app.js, add the following code at the top of the **deviceready** handler:
-
-```    
-    StatusBar.overlaysWebView( false );
-    StatusBar.backgroundColorByHexString('#209dc2');
-    StatusBar.styleLightContent();
-```    
+    -Programatically:
+      In app.js, add the following code at the top of the **deviceready** handler:
+    
+    ```    
+        StatusBar.overlaysWebView( false );
+        StatusBar.backgroundColorByHexString('#209dc2');
+        StatusBar.styleLightContent();
+    ```    
 
 
 3. Now build and run the application again to see the results:
