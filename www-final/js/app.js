@@ -27,6 +27,11 @@
     /* --------------------------------- Event Registration -------------------------------- */
     document.addEventListener('deviceready', function () {
         FastClick.attach(document.body);
+
+        StatusBar.overlaysWebView( false );
+        StatusBar.backgroundColorByHexString('#209dc2');
+        StatusBar.styleLightContent();
+
         if (cordova.plugins.Keyboard)
             cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
 
@@ -39,7 +44,7 @@
                     'OK'        // buttonName
                 );
             };
-        }
+        } else console.log("No notification plugin found");
     }, false);
 
     /* ---------------------------------- Local Functions ---------------------------------- */

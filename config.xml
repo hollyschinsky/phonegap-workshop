@@ -11,15 +11,19 @@
     <!-- Whitelist open -->
     <access origin="*" />
 
+
+    <!-- WORKSHOP NOTES.... -->
+
     <!-- Status Bar config -->
     <!-- Set overlay to false to leave space at the top like iOS6, iOS7 and above made status bar transparent
-         Learn all about it here: http://devgirl.org/2014/07/31/phonegap-developers-guid/
-     -->
-    <preference name="StatusBarOverlaysWebView" value="false" />
-    <preference name="StatusBarBackgroundColor" value="#209dc2"/><!-- only applies works when status bar overlay false -->
-    <preference name="StatusBarStyle" value="lightcontent" /><!-- light text/icons / use value of 'default' for black text icons-->
+         Learn all about it here: http://devgirl.org/2014/07/31/phonegap-developers-guid/   -->
 
-    <!-- Workshop Note: You may see the following values but they are deprecated, stick to above -->
+    <!--<preference name="StatusBarOverlaysWebView" value="false" />-->
+    <!--<preference name="StatusBarBackgroundColor" value="#209dc2"/>  only applies works when status bar overlay false -->
+    <!--<preference name="StatusBarStyle" value="lightcontent" />      light text and icons -->
+
+
+    <!-- Don't use the following values since they are deprecated, stick to above -->
     <!--<preference name="StatusBarStyle" value="blackopaque" /><!- light text/icons -->
     <!--<preference name="StatusBarStyle" value="blacktranslucent" /><!- black text/icons -->
 
