@@ -1,6 +1,6 @@
 ---
 layout: module
-title: Module 1&#58; Adding Polish | Configuration Tips
+title: Module 14&#58; Adding Polish | Configuration Tips
 ---
 This module is going to take you through a couple steps to polish the application and give you some tips on configuration settings to be aware of. 
 
