@@ -8,7 +8,7 @@ In this section, we add the ability to add a session to the native calendar on t
 1. Add this calendar plugin to your project:
 
     ```
-    $ phonegap plugin add https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin.git
+    $ cordova plugin add https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin.git
     
     ```
 
@@ -59,12 +59,10 @@ In this section, we add the ability to add a session to the native calendar on t
 
 5. Test the Application
 
-When you click the add or plus tab, you should see a notification popup such as below:
+When you click the add or plus tab, you should see a notification popup and a new entry added to your native calendar on October 23rd:
+such as below:
 
-![](images/add-calendar.png) 
-
-and a new entry added to your native calendar on October 23rd:
-![](images/calendar1.png) ![](images/calendar2.png) 
+![](images/add-calendar.png) ![](images/calendar1.png) ![](images/calendar2.png) 
  
 >On the simulator use shift+cmd+h to get to the home screen to find the calendar to verify.
  

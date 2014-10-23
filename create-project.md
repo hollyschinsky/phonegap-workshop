@@ -63,8 +63,8 @@ title: Module 1&#58; Creating a PhoneGap Project
 8. Make sure you are in the **workshop** directory, and add these basic plugins to your projects:
 
     ```          
-    phonegap plugin add org.apache.cordova.console
-    phonegap plugin add org.apache.cordova.device
+    cordova plugin add org.apache.cordova.console
+    cordova plugin add org.apache.cordova.device
     ```        
         
     > The [console plugin](https://github.com/apache/cordova-plugin-console) is needed to see any console messages you might be writing in your app (console.log("My value is " + val)).  
