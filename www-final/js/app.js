@@ -28,7 +28,7 @@
     document.addEventListener('deviceready', function () {
         FastClick.attach(document.body);
 
-        StatusBar.overlaysWebView( false );
+        StatusBar.overlaysWebView(false);
         StatusBar.backgroundColorByHexString('#209dc2');
         StatusBar.styleLightContent();
 
