@@ -10,7 +10,7 @@ In this section, you use the Cordova Camera API to provide the user with the abi
 1. Add the camera plugin to your project:
 
   ```
-  cordova plugin add org.apache.cordova.camera
+  phonegap plugin add org.apache.cordova.camera
   ```
 
 1. In index.html, add the following list item to the employee template:
