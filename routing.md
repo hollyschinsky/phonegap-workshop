@@ -17,6 +17,12 @@ Open index.html and add a template to render a detailed session view:
           </a>
           <h1 class="title">Session Detail</h1>
       </header>
+      
+      <!-- NOTE: Bars MUST come before content -->
+      <nav class="bar bar-tab tabbar">
+          
+      </nav>
+      
       <div class="content">
           <div class="card">
   
@@ -34,31 +40,19 @@ Open index.html and add a template to render a detailed session view:
                       <div> <p>{{ description }}</p></div>
                   </li>                
               </ul>
-          </div>
-          <nav class="bar bar-tab">
-              <a class="tab-item" href="#">
-                  <span class="icon icon-star-filled"></span>
-                  <span class="tab-label">Favorite</span>
-              </a>
-              <a class="tab-item" href="#">
-                  <span class="icon icon-person"></span>
-                  <span class="tab-label">Follow</span>
-              </a>
-              <a class="tab-item" href="#">
-                  <span class="icon icon-share"></span>
-                  <span class="tab-label">Share</span>
-              </a>
-          </nav>
+          </div>          
       </div>
  {% endraw %}
   ```
+  
+  - If you're wondering why the tab bar is empty, we'll be adding content to it in a later lesson.
 
 ## Step 2: Create the SessionView class
 
 1. Create a file named SessionView.js in the js directory, and define it as follows:
 
-
-  ```var SessionView = function(session) {
+  ```
+  var SessionView = function(session) {
 
       this.initialize = function() {
           this.$el = $('<div/>');
@@ -70,7 +64,6 @@ Open index.html and add a template to render a detailed session view:
       };
 
       this.initialize();
-
   }
   ```
 
@@ -115,7 +108,7 @@ Open index.html and add a template to render a detailed session view:
 
 1. Test the application.
 
-    ![](images/routing-home.png) ![](images/session-view.png)
+    ![](images/routing1.png) ![](images/routing2.png)
 
 <div class="row" style="margin-top:40px;">
 <div class="col-sm-12">

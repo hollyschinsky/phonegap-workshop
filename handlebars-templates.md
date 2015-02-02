@@ -4,7 +4,7 @@ title: Module 8&#58; Using Handlebars Templates
 ---
 Writing HTML fragments in JavaScript and programmatically inserting them into the DOM is tedious. It makes your application harder to write and harder to maintain. HTML templates address this issue by decoupling the UI definition (HTML markup) from your code. There are a number of great HTML template solutions, including Mustache.js, Handlebars.js, and Underscore.js to name a few.
 
-In this module, we create two templates to streamline the code of the Employee Directory application. We use 
+In this module, we create two templates to streamline the code of the PhoneGap Conference Workshop application. We use 
 [Handlebars.js](http://handlebarsjs.com/) but the same result can be achieved using the other HTML template solutions.
 
 ## Step 1: Define the templates
@@ -95,7 +95,7 @@ Modify the immediate function in app.js as follows:
 
 1. Test the application.
 
-    ![](images/statusbar1.png)
+    ![](images/handlebars-pg.png)
 
 
 <div class="row" style="margin-top:40px;">
