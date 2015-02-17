@@ -2,13 +2,13 @@
 layout: module
 title: Module 6&#58; Avoiding the 300ms Click Delay
 ---
-###<a href="develop/managing-click-delay.html">Overview</a>
 
 
 <button id="infoBtn" type="button" class="btn btn-primary btn-lg" data-toggle="collapse" title="More Info"
    data-target="#infoBtn">More Info</button>
+
 <p id="infoBtn" class="collapse out">
-   <p>MORE INFO</p>
+   MORE INFO
 </p>
 
 ##Steps
