@@ -5,11 +5,13 @@ title: Module 6&#58; Avoiding the 300ms Click Delay
 
 
 <button id="infoBtn" type="button" class="btn btn-primary btn-lg" data-toggle="collapse" title="More Info"
-   data-target="#infoBtn">More Info</button>
+   data-target="#infoBtn">More Info
+   <p id="infoBtn" class="collapse out">
+      MORE INFO
+   </p>
 
-<p id="infoBtn" class="collapse out">
-   MORE INFO
-</p>
+</button>
+
 
 ##Steps
 1. Test the application on your iOS device or in the iOS emulator (this will **not** work on the browser). Tap the Help button, and notice the delay before the dialog appears.
