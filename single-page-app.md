@@ -2,7 +2,7 @@
 layout: module
 title: Module 7&#58; Setting Up a Single-Page Application
 ---
-A <a href="single-page-architecture.html">Single-Page Application</a> is a web application that lives within a single HTML page. The "views" of the application are injected into and removed from the DOM as needed as the user navigates through the app. A single-page application architecture is particularly well suited for mobile apps:
+A <a href="develop/single-page-architecture.html">Single-Page Application</a> is a web application that lives within a single HTML page. The "views" of the application are injected into and removed from the DOM as needed as the user navigates through the app. A single-page application architecture is particularly well suited for mobile apps:
 
 - The absence of page refreshes provides a more fluid and closer to native experience.
 - The UI is entirely created at the client-side with no dependency on a server to create the UI, making it an ideal architecture for applications that work offline.

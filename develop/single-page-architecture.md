@@ -1,3 +1,8 @@
+---
+layout: default
+title: Single Page Architecture
+---
+
 ##Mobile Best Practices: Single Page Architecture (SPA)
 
 ####Overview

@@ -1,3 +1,8 @@
+---
+layout: default
+title: Scrolling Tips
+---
+
 ###Developing a Mobile App: Scrolling Tips
 
 Pull-to-refresh is a standard UI pattern to refresh lists in mobile applications and can be implemented in your PhoneGap / Cordova applications as well.
