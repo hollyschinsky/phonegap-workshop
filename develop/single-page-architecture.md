@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: module
 title: Single Page Architecture
 ---
 
