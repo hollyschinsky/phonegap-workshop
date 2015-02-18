@@ -6,8 +6,10 @@ title: PhoneGap Developer Guides
 ##PhoneGap Developer Guides
 
 ###Performance Tips
-        
-[Paint Before You Animate](develop/managing-click-delay.html) 
+   
+<div class="extraContent">
+    <ul>
+        <li><a href="develop/managing-click-delay.html">Managing Click Delay</a></li>
         <li><a href="develop/perf-tip-hardware-acceleration.html"> Hardware Acceleration</a></li>
         <li><a href="develop/perf-tip-minimize-reflows.html"> Minimizing Reflows</a></li>
         <li><a href="develop/perf-tip-css-sprite-sheets.html"> Use CSS Sprite Sheets</a></li>
