@@ -6,7 +6,7 @@ title: Module 11&#58; Using Hardware Acceleration
 In this module, you add hardware accelerated page transitions when the user navigates between the list and details 
 views. 
 
-###Steps
+##Steps
 
 Modify **index.html** as follows:
 
