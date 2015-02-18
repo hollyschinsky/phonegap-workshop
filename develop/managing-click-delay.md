@@ -3,6 +3,8 @@ layout: default
 title: Managing Click Delay
 ---
 
+##Performance Tip: Managing Click Delay
+
 ##Problem
 
 When beginning mobile development, you may notice that your app feels a bit sluggish when you tap on the screen. This is because the mobile web browser is trying to interpret touch commands to map them to old-style *click* events. The browser receives a *touchstart* event first, then it listens to see if the finger is going to move to scroll or release to become a tap before it fires the click event your app is listening for. These same browser engines also have a *double-tap-to-zoom* function so then there’s the issue of distinguishing between a *tap* and *double tap*. 
