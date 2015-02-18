@@ -2,6 +2,9 @@
 layout: module
 title: Module 11&#58; Using Hardware Acceleration
 ---
+
+###<a href="develop/perf-tip-hardware-acceleration.html">Overview</a>
+
 In this module, you add hardware accelerated page transitions when the user navigates between the list and details 
 views. 
 
