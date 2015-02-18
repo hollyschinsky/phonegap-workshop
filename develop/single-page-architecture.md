@@ -10,7 +10,7 @@ Single page applications refer to apps that can redraw any part of the UI withou
 
 In SPA’s the application logic is shifted from the web server to the client (device). The result is a more fluid and native-like user experience. 
 
-![image](images/spa.png)
+![image](../images/spa.png)
 
 **Figure 1:** Single Page App Architecture Diagram. Client represents mobile device or browser.
 
