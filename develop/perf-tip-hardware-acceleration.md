@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Performance Tip: Hardware Acceleration
+title: Hardware Acceleration
 ---
 
 ##Hardware Acceleration
