@@ -7,7 +7,7 @@ title: PhoneGap Developer Guides
 
 ###Performance Tips
    
-<div class="extraContent">
+<div class="container">
     <ul>
         <li><a href="develop/managing-click-delay.html">Managing Click Delay</a></li>
         <li><a href="develop/perf-tip-hardware-acceleration.html"> Hardware Acceleration</a></li>
