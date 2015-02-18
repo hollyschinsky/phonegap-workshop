@@ -111,3 +111,6 @@ h2 {
 .phonegapGrey {
     border-bottom-color: rgb(210, 209, 210);
 }
+.extraContent {
+    padding: 15px;
+}
