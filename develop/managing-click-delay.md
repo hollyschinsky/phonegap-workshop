@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Performance Tip: Managing Click Delay
+title: Managing Click Delay
 ---
 
 ##Problem
