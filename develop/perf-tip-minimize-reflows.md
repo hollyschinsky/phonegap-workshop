@@ -1,3 +1,8 @@
+---
+layout: default
+title: Animate Wisely to Minimize Reflows
+---
+
 ###Performance Tip: Animate Wisely to Minimize Reflows
 
 ####Problem:

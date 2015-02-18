@@ -1,4 +1,10 @@
-##Basic Quick Start
+---
+layout: default
+title: Quick Start
+---
+
+
+##Basic PhoneGap Quick Start
 
  **Requires the least amount of setup**
 

@@ -1,3 +1,8 @@
+---
+layout: default
+title: Paint before you animate
+---
+
 ###Performance Tip: Paint before you animate
 
 ####Problem: 

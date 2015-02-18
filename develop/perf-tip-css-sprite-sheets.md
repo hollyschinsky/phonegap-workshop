@@ -1,3 +1,8 @@
+---
+layout: default
+title: Using CSS Sprite Sheets
+---
+
 ###Performance Tip: Using CSS Sprite Sheets
 
 ####Problem

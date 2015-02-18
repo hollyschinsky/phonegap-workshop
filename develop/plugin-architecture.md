@@ -1,3 +1,9 @@
+---
+layout: default
+title: Plugin Architecture
+---
+
+
 ###Developing a Mobile App: Intro to PhoneGap Plugins
 
 PhoneGap plugins allow you to extend the existing PhoneGap functionality to add your own custom features by exposing native code. The plugins are able to communicate via a bridge between the JavaScript and native code. For Android, you write your native plugin code in Java and for iOS you write it in Objective-C. The whole set of [PhoneGap API’s (camera, contacts etc)](http://docs.phonegap.com/en/edge/cordova_plugins_pluginapis.md.html#Plugin%20APIs) were built using this same paradigm. 

@@ -1,4 +1,7 @@
-##Status Bar Handling
+---
+layout: default
+title: iOS Status Bar Guide
+---
 
 Status Bar Simulator App - CLICK ME!
 

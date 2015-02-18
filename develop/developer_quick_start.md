@@ -1,3 +1,8 @@
+---
+layout: default
+title: Developer Quick Start
+---
+
 ###Developer Quick Start
 
 1. Go to the [PhoneGap Install page](http://phonegap.com/install/) and follow the instructions to install PhoneGap via npm 

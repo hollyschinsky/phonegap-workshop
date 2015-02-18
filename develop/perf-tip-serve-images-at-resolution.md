@@ -1,3 +1,8 @@
+---
+layout: default
+title: Serve Images at Desired Resolution
+---
+
 ###Performance Tip: Serve Images at Desired Resolution
 
 ####Problem: 
