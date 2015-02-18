@@ -3,9 +3,14 @@ layout: default
 title: PhoneGap Developer Guides
 ---
 
-##PhoneGap Developer Guides
+### PhoneGap Developer Guides
    
-<div class="container">    
+<div class="container">   
+    <h3>General</h3>
+     <ul>
+         <li><a href="develop/quickstart.html">PhoneGap Quick Start</a></li>
+         
+     </ul>
     <h3>Performance Tips</h3>
     <ul>
         <li><a href="develop/managing-click-delay.html">Managing Click Delay</a></li>
@@ -24,10 +29,5 @@ title: PhoneGap Developer Guides
     <ul>
         <li><a href="develop/plugin-architecture.html">Plugin Architecture</a></li>
         <li><a href="develop/status-bar-handling.html">Status Bar Handling</a></li>
-    </ul>
-    <h3>General</h3>
-    <ul>
-        <li><a href="develop/quickstart.html">PhoneGap Quick Start</a></li>
-        
-    </ul>
+    </ul>    
 </div>
