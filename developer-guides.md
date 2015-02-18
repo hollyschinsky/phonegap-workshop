@@ -26,7 +26,7 @@
         <h3>Tutorials</h3>
         <ul>
             <li><a href="develop/plugin-architecture.html">Plugin Architecture</a></li>
-            <li><a href="develop/status-bar-handling.v">Status Bar Handling</a></li>
+            <li><a href="develop/status-bar-handling.html">Status Bar Handling</a></li>
         </ul>
     </div>
 </body>
