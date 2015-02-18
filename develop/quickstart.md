@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Quick Start
+title: PhoneGap Quick Start
 ---
 
 
@@ -8,7 +8,7 @@ title: Quick Start
 
  **Requires the least amount of setup**
 
-1. Download [PhoneGap GUI](https://github.com/hermwong/phonegap-gui/) to your desktop, install, and launch
+1. Download [PhoneGap Desktop](https://github.com/hermwong/phonegap-gui/) to your desktop, install, and launch
 
 2. Create a new project
 
