@@ -18,3 +18,6 @@ In Chrome and Safari you might see a flickering effect when using CSS transforms
 
 You need to be careful using CSS 3D transforms in this manner however because the amount of memory available on the GPU is limited and exceeding it can cause your app to crash. You should use this trick with more complex parts of views where you apply it to the top-level element. 
 
+###References and Further Reading
+1-[Opera CSS Guide](https://dev.opera.com/articles/css-will-change-property/)
+2-[Interview with David Arel](http://www.infoq.com/interviews/arel-hybrid-mobile-development?utm_term=global)
