@@ -3,9 +3,8 @@ layout: default
 title: PhoneGap Developer Guides
 ---
 
-### PhoneGap Developer Guides
-   
-<div class="container">   
+<div class="container">
+    <h2>PhoneGap Developer Guides</h2>
     <h3>General</h3>
      <ul>
          <li><a href="develop/quickstart.html">PhoneGap Quick Start</a></li>
