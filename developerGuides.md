@@ -1,3 +1,8 @@
+---
+layout: default
+title: Developer Guides
+---
+
 <!DOCTYPE html>
 <html>
 <head lang="en">
