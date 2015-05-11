@@ -28,7 +28,7 @@ Install the Plugin
 
 To use the Status Bar plugin, first install it in the usual manner:
 
-	$ cordova plugin add org.apache.cordova.statusbar
+	$ phonegap plugin add org.apache.cordova.statusbar
 
 ###Plugin - Usage
 

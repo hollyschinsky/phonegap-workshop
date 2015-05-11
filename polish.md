@@ -39,7 +39,7 @@ application's header text as shown in the screenshot above. You can fix this iss
 1. Add the status bar plugin:
 
     ```
-    cordova plugin add org.apache.cordova.statusbar
+    phonegap plugin add org.apache.cordova.statusbar
     ```
 
 2. There are two options for using the statusbar to fix this issue, via configuration or programmatically. 
@@ -83,7 +83,7 @@ We can suppress the accessory keyboard that pops up with the **Done** button on 
 1. Add the [Ionic Keyboard Plugin](https://github.com/driftyco/ionic-plugins-keyboard):
 
   
-        cordova plugin add https://github.com/driftyco/ionic-plugins-keyboard
+        phonegap plugin add https://github.com/driftyco/ionic-plugins-keyboard
   
   
 2. In app.js, add the following code at the top of the **deviceready** handler:

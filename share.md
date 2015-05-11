@@ -8,7 +8,7 @@ In this section, we add the ability to share the session details through the dev
 1. Add the social sharing plugin to your project:
 
     ```
-    $ cordova plugin add https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin/
+    $ phonegap plugin add https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin/
     
     ```
 
