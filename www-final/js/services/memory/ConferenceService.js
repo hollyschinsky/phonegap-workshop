@@ -32,17 +32,101 @@ var ConferenceService = function() {
     }
 
     var sessions = [
-        { "id":0,"title":"PhoneGap Developer App and the PhoneGap GUI","firstName":"Tim","lastName":"Kim","pic":"timkim.jpeg","time":"9:00am","room":"Ballroom A","twitter_id":"timkim","description":"Developing for PhoneGap just got easier with the newly released PhoneGap GUI that ties in with the PhoneGap Developer App. Learn how to use both to make your PhoneGap development workflow faster and easier than before."},
-        { "id":1,"title":"Enterprise: Not just a dirty word any more","firstName":"Bruce","lastName":"Lefebvre","pic":"bruce_lefebvre.png","time":"11:00am","room":"Ballroom C","twitter_id":"brucelefebvre","description":"This talk will focus on the integration of Adobe Experience Manager (AEM) and PhoneGap, affectionately known as PhoneGap Enterprise. We'll cover why you should care (hint: $) and bring you up to speed on what the platform can do for you and your clients."},
-        { "id":2,"title":"PhoneGap Build: Building without an SDK","firstName":"Brett","lastName":"Rudd","pic":"brettrudd.jpg","time":"2:00pm","room":"Ballroom D","twitter_id":"brettrudd","description":"This presentation will cover the features of the service, focusing on some of our new-ish features such as our oath support, plugins and debugging. There will also be some exclusive sneak peeks of new features revolved around external and private plugins that will hopefully be open for immediate beta testing!  We’ll end on discussing the future and what is on our roadmap in the coming months."},
-        { "id":3,"title":"Many Views: Third Party WebViews on Android","firstName":"Joe","lastName":"Bowser","pic":"joe_bowser.jpg","time":"1:00pm","room":"Ballroom B","twitter_id":"infil00p","description":"Learn about the recent changes in Cordova, and how developers now have the option to use Mozilla's GeckoView in addition to Intel Crosswalk and the default Android WebView on Cordova.  This new feature coming to Cordova on Android finally gives developers a way out of previously irritating bugs that there was no way to work around.  This will go over the ups and downs of developing for different webviews, as well as a demo showing the power of this new feature."},
-        { "id":4,"title":"PhoneGap Enterprise","firstName":"Anis","lastName":"Kadri","pic":"anis.png","time":"10:00am","room":"Ballroom F","twitter_id":"aniskadri","description":"Learn more about PhoneGap enterprise. A new way to create and distribute apps inside your enterprise powered by Adobe Marketing Cloud and Adobe Experience Manager. Find out how you can speed up your development cycles and allow your team members to better collaborate in order to easily create mobile apps."},
-        { "id":5,"title":"Sneak Peek: Adobe Experience Manager and Mobile","firstName":"Anthony","lastName":"Rumsey","pic":"anthony.jpeg","time":"4:45pm","room":"Ballroom A","twitter_id":"planetrumsey","description":"See a sneak peek demo of the new features coming soon to PhoneGap Enterprise and Adobe Experience Manager."},
-        { "id":6,"title":"Workshop: Intro to PhoneGap","firstName":"Michael","lastName":"Brooks","pic":"mwbrooks.jpeg","time":"10:00am","room":"Theater","twitter_id":"mwbrooks","description":"This workshop will provide an introduction to PhoneGap, the philosophy behind it and how to get started quickly using a variety of different tools available. The CLI, PhoneGap Developer App, PhoneGap Build and more will be shown and you will learn about the many frameworks available to choose from when building your mobile apps. You will also be shown debugging techniques and walk away with a solid understanding of what PhoneGap is all about."},
-        { "id":7,"title":"Workshop: Architecting PhoneGap Apps ","firstName":"Christophe","lastName":"Coenraets","pic":"christophe.jpg","time":"1:00pm","room":"Theater","twitter_id":"raymondcamden","description":"Learn how to architect large, complex, and native-like PhoneGap apps using HTML, JavaScript, and CSS. We will investigate mobile challenges and find solutions for them as well as learn all about Single Page Architecture, HTML templates, effective touch events, performance techniques, MVC Frameworks and more."},
-        { "id":8,"title":"Workshop: PhoneGap and Firefox OS","firstName":"Jason","lastName":"Weathersby","pic":"jasonweathersby.jpeg","time":"3:00pm","room":"Theater","twitter_id":"jasonweathersby","description":"We'll begin with the current status of the Firefox OS Cordova integration, including demos of building and debugging basic Cordova Apps using Firefox’s new Web IDE. The rest of the workshop will be hands-on: we'll help you run your app on a Firefox OS device."},
-        { "id":9,"title":"Workshop: Build a PhoneGap App with Ionic+AngularJS","firstName":"Holly","lastName":"Schinsky","pic":"holly.jpg","time":"3:00pm","room":"Theater","twitter_id":"devgirlfl","description":"In this workshop we’ll build a full-blown mobile application from scratch for a real world scenario using PhoneGap and the Ionic+AngularJS framework stack."}
+        { "id":0,
+            "title":"Embedding Natively: The Hybrid Sweet Spot",
+            "firstName":"Anis","lastName":"Kadri","pic":"anis_kadri.jpg",
+            "time":"10:00am","room":"Ballroom F","twitter_id":"aniskadri",
+            "description":"Leveraging native and web components to find that hybrid sweet spot and take advantage of the best of both worlds with embedded webviews."
+        },
+        { "id":1,
+            "title":"Workshop: PhoneGap Enterprise",
+            "firstName":"Anthony","lastName":"Rumsey","pic":"anthony_rumsey.jpg",
+            "time":"4:45pm","room":"Ballroom A","twitter_id":"planetrumsey",
+            "description":"See a sneak peek demo of the latest features coming soon to PhoneGap Enterprise and Adobe Experience Manager."
+        },
+        { "id":2,
+            "title":"Workshop: Intro to PhoneGap",
+            "firstName":"Michael","lastName":"Brooks","pic":"michael_brooks.jpg",
+            "time":"10:00am","room":"Theater","twitter_id":"mwbrooks",
+            "description":"This workshop will provide an introduction to PhoneGap, the philosophy behind it and how to get started quickly using a variety of different tools available. The CLI, PhoneGap Developer App, PhoneGap Build and more will be shown and you will learn about the many frameworks available to choose from when building your mobile apps. You will also be shown debugging techniques and walk away with a solid understanding of what PhoneGap is all about."
+        },
+        { "id":3,
+            "title":"Workshop: Architecting PhoneGap Apps ",
+            "firstName":"Holly","lastName":"Schinsky","pic":"holly_schinsky.jpg",
+            "time":"1:00pm","room":"Theater","twitter_id":"devgirlfl",
+            "description":"Learn how to architect large, complex, and native-like PhoneGap apps using HTML, JavaScript, and CSS. We will investigate mobile challenges and find solutions for them as well as learn all about Single Page Architecture, HTML templates, effective touch events, performance techniques, MVC Frameworks and more."
+        },
+        { "id":4,
+            "title":"Achievement Unlocked: You've just added Achievements and Leaderboards to your HTML5 game for iOS and Android",
+            "firstName":"Martin","lastName":"Kool","pic":"martin_kool.jpg",
+            "time":"9:00am","room":"Ballroom A","twitter_id":"mrtnkl",
+            "description":"Learn how to easily add achievements and leaderboards to your HTML5 games for iOS and Android."
+        },
+        { "id":5,
+            "title":"Open Web",
+            "firstName":"Christian","lastName":"Heilmann","pic":"christian_heilmann.jpg",
+            "time":"2:00pm","room":"Ballroom D","twitter_id":"codepo8",
+            "description":"."
+        },
+        { "id":6,
+            "title":"Reframing Hybrid",
+            "firstName":"Max","lastName":"Lynch","pic":"max_lynch.jpg",
+            "time":"11:00am","room":"Ballroom C","twitter_id":"maxlynch",
+            "description":"Taking a refreshed look at hybrid applications and we can leverage the benefits of using web standards and cross platform code base while still building quality high performing mobile applications."
+        },
+        { "id":7,
+            "title":"PhoneGap Accessibility",
+            "firstName":"Matt","lastName":"May","pic":"matt_may.jpg",
+            "time":"1:00pm","room":"Ballroom B","twitter_id":"mattmay",
+            "description":"Learn how to handle Accessibility concerns within your PhoneGap apps."
+        },
+        { "id":8,
+            "title":"Luck + Motion: User Growth for your App",
+            "firstName":"Claudio","lastName":"Cossio","pic":"claudio_cossio.jpg",
+            "time":"3:00pm","room":"Theater","twitter_id":"fakejking",
+            "description":"Find out how to use luck and motion to grow the user base for your mobie hybrid apps."
+        },
+        { "id":9,
+            "title":"The Android Webview",
+            "firstName":"Niels","lastName":"Leenheer","pic":"niels_leenheer.jpg",
+            "time":"9:00am","room":"Theater","twitter_id":"html5test",
+            "description":"Everything you wanted to know about the Android Webview. And more."
+        },
+        { "id":10,
+            "title":"Push & Pull",
+            "firstName":"Simon","lastName":"MacDonald","pic":"simon_macdonald.jpg",
+            "time":"2:00pm","room":"Theater","twitter_id":"macdonst",
+            "description":"Learn how to implement and push notifications with your hybrid mobile apps."
+        },
+        { "id":11,
+            "title":"Snowbuddy: How we made people think it was a native app",
+            "firstName":"Syd","lastName":"Lawrence","pic":"syd_lawrence.jpg",
+            "time":"10:00am","room":"Theater","twitter_id":"sydlawrence",
+            "description":"Find out some tips and tricks on how to build native looking apps using HTML5, JavaScript and CSS."
+        },
+        { "id":12,
+            "title":"Sneak Peek at What's New in Ionic",
+            "firstName":"Ben","lastName":"Sperry","pic":"ben_sperry.jpg",
+            "time":"11:00am","room":"Ballroom C","twitter_id":"bensperry",
+            "description":"Check out what's new in Ionic and get some demo's of their latest services."
+        }
 
     ];
-
+    //var sessions2 = [
+    //    {"id": 1, "firstName": "Anis", "lastName": "Kadri", "position": "Sr Software Engineer", "company": "Adobe", "city": "San Francisco, US", "pic": "anis_kadri.jpg", "twitterId": "@aniskadri", "blog": "http://imhotep.koalabs.org"},
+    //    {"id": 2, "firstName": "Ben", "lastName": "Sperry", "position": "Co-founder/CEO", "company": "Ionic", "city": "Madison", "pic": "ben_sperry.jpg", "twitterId": "@benjsperry", "blog": "http://bensperry.com"},
+    //    {"id": 3, "firstName": "Brian", "lastName": "LeRoux", "position": "SPACELORD!1!!", "company": "Adobe", "city": "San Francisco, CA", "pic": "brian_leroux.jpg", "twitterId": "@brianleroux", "blog": "http://brianleroux.com"},
+    //    {"id": 4, "firstName": "Christian", "lastName": "Heilmann", "position": "HTML5/Open Web Evangelist",
+    //        "company": "Microsoft", "city": "London, UK", "pic": "christian_heilmann.jpg", "twitterId": "@codepo8", "blog": "http://christianheilman.com"},
+    //    {"id": 5, "firstName": "Claudio", "lastName": "Cossio", "position": "Software Engineer",  "company": "Nearsoft", "city": "Boston, MA", "pic": "claudio_cossio.jpg", "twitterId": "@fakejking", "blog": "http://coenraets.org"},
+    //    {"id": 6, "firstName": "Holly", "lastName": "Schinsky", "position": "Developer Advocate", "company": "Adobe", "city": "Tampa, FL", "pic": "holly_schinsky.jpg", "twitterId": "@devgirlfl", "blog": "http://devgirl.org"},
+    //    {"id": 7, "firstName": "Martin", "lastName": "Kool", "position": "Interaction Engineer",
+    //        "company": "Q42", "city": "Amsterdam", "pic": "martin_kool.jpg", "twitterId": "@mrtnkl", "blog": "http://martinkool.com/"},
+    //    {"id": 8, "firstName": "Matt", "lastName": "May", "position": "Accessibility Evangelist", "company": "Adobe", "city": "Seattle, WA", "pic": "matt_may.jpg", "twitterId": "@mattmay", "blog": "http://www.bestkungfu.com/"},
+    //    {"id": 9, "firstName": "Max", "lastName": "Lynch", "position": "Co-founder/CEO", "company": "Ionic", "city": "Madison", "pic": "max_lynch.jpg", "twitterId": "@maxlynch", "blog": "http://maxlynch.com"},
+    //    {"id": 10, "firstName": "Michael", "lastName": "Brooks", "position": "Senior Software Barista", "company": "Adobe", "city": "Vancouver", "pic": "michael_brooks.jpg", "twitterId": "@mwbrooks", "blog": "http://michaelbrooks.ca"},
+    //    {"id": 11, "firstName": "Niels", "lastName": "Leenheer", "position": "Sotware Engineer", "company": "Salonhub", "city": "Drachten, The Netherlands", "pic": "niels_leenheer.jpg", "twitterId": "@html5test", "blog": "http://html5test.com"},
+    //    {"id": 12, "firstName": "Simon", "lastName": "MacDonald", "position": "Sr Software Engineer", "company": "Adobe", "city": "Ottawa, CA", "pic": "simon_macdonald.jpg", "twitterId": "@macdonst", "blog": "http://simonmacdonald.blogspot.com/"},
+    //    {"id": 13, "firstName": "Syd", "lastName": "Lawrence", "position": "Keyboard Enthusiast", "company": "wemakeawesomesh", "city": "London & Austria", "pic": "syd_lawrence.jpg", "twitterId": "@sydlawrence", "blog": "http://wemakeawesomesh.it"}
+    //]
 }
