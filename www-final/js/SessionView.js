@@ -25,7 +25,7 @@ var SessionView = function(session) {
             if (session.time.indexOf("pm")>-1)
                 hour = parseInt(hour)+12;
 
-            var startDate = new Date(2014,9,23,hour,00,00);
+            var startDate = new Date(2014,9,23,hour,0,0);
             var endDate = new Date();
             endDate.setTime(startDate.getTime() + 3600000);//one hour
 
