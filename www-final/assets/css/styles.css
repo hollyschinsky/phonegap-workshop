@@ -31,9 +31,9 @@ ul {
     /*bottom: 0;*/
     /*z-index: 99999;*/
 /*}*/
-/*.desc {*/
-    /*minheight: 220px;*/
-/*}*/
+.desc {
+    minheight: 220px;
+}
 .media>p {
     color: #444;
 }

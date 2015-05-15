@@ -31,6 +31,12 @@ var ConferenceService = function() {
         return deferred.promise();
     }
 
+    this.findAll = function() {
+        var deferred = $.Deferred();
+        deferred.resolve(sessions);
+        return deferred.promise();
+    }
+
     var sessions = [
         { "id":0,
             "title":"Embedding Natively: The Hybrid Sweet Spot",

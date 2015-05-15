@@ -27,6 +27,9 @@
     /* --------------------------------- Event Registration -------------------------------- */
     document.addEventListener('deviceready', function () {
         FastClick.attach(document.body);
+        console.log("Service " + service);
+        console.log("Service... " + service.findAll());
+        service.findAll();
 
         StatusBar.overlaysWebView(false);
         StatusBar.backgroundColorByHexString('#209dc2');
@@ -44,10 +47,7 @@
                     'OK'        // buttonName
                 );
             };
-        } else console.log("No notification plugin found");
+        } else console.log("No dialog plugin found");
     }, false);
-
-    /* ---------------------------------- Local Functions ---------------------------------- */
-
 
 }());
